@@ -31,7 +31,7 @@ public class Node //Vị trí trong game
 
     public Vector3 Position(float z = 0f)
     {
-        return new Vector3(this.x + 0.5f, this.y  +0.5f, z);
+        return new Vector3(this.x + 0.5f, this.y  + 0.5f, z);
     }
 
     public Node GetNode(Tile.DIR dir)
@@ -44,5 +44,10 @@ public class Node //Vị trí trong game
             case Tile.DIR.RIGHT: return  _rightNode;
             default: return null;
         }
+    }
+
+    public override string ToString()
+    {
+        return string.Format("[{0}, {1}]", x, y);
     }
 }

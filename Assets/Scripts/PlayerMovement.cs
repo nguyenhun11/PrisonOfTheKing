@@ -5,19 +5,24 @@ public class PlayerMovement : MonoBehaviour
     private TravelTile _travelTile;
     private Collider2D _collider2D;
     private Rigidbody2D _rigidbody2D;
+    
 
     public bool IsMoving
     {
-        get { return _travelTile.isMoving; }
+        get { return _travelTile.IsMoving; }
     }
 
     private Tile.DIR _bufferDirWhenMoving = Tile.DIR.NONE;
+    public delegate void MoveAction(Tile.DIR direction);
+
+    public event MoveAction OnPlayerMoved;
 
     void Start()
     {
         _collider2D = GetComponent<Collider2D>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _travelTile = GetComponent<TravelTile>();
+        
     }
 
     void Update()
@@ -35,14 +40,21 @@ public class PlayerMovement : MonoBehaviour
         {
             if (_bufferDirWhenMoving != Tile.DIR.NONE)
             {
-                _travelTile.Move(_bufferDirWhenMoving);
+                MoveCharacter(_bufferDirWhenMoving);
                 _bufferDirWhenMoving = Tile.DIR.NONE; // Reset buffer sau khi dùng
             }
             else if (inputThisFrame != Tile.DIR.NONE)
             {
-                _travelTile.Move(inputThisFrame);
+                MoveCharacter(inputThisFrame);
             }
         }
+    }
+
+    private void MoveCharacter(Tile.DIR direction)
+    {
+        _travelTile.Move(direction);
+        //Debug.Log("PM: " + direction.ToString());
+        OnPlayerMoved?.Invoke(direction);
     }
 
     private Tile.DIR GetDirInput()
