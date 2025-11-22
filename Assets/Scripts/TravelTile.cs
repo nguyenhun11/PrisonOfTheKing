@@ -43,13 +43,7 @@ public class TravelTile : Tile
             // Kiểm tra nếu khoảng cách cực nhỏ (coi như đã đến nơi)
             if (Vector3.Distance(transform.position, targetPos) < 0.001f)
             {
-                // Bước quan trọng: Gán cứng vị trí bằng đích đến để triệt tiêu sai số float
-                transform.position = targetPos;
-            
-                SnapToNode(); // Cập nhật dữ liệu Node hiện tại
-                IsMoving = false;
-                MoveDir = DIR.NONE;
-                OnTravelTileStop?.Invoke();
+                Stop();
             }
         }
     }
@@ -79,15 +73,28 @@ public class TravelTile : Tile
             targetNode = new Node(fixedPos);
         }
     }
-    
-    private void OnTriggerEnter2D(Collider2D other)//Di chuyển khi các TravelTile chạm nhau
+
+    public void Stop()
     {
-        if(!canMoveByOthers) return;
-        if (other.TryGetComponent(out TravelTile otherTravelTile))
+        SnapToNode(); // Cập nhật dữ liệu Node hiện tại
+        IsMoving = false;
+        MoveDir = DIR.NONE;
+        OnTravelTileStop?.Invoke();
+    }
+
+    public void Fall()
+    {
+        Stop();
+        Move(DIR.DOWN);
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (canMoveByOthers && other.TryGetComponent(out TravelTile otherTravelTile))//Di chuyển khi các TravelTile chạm nhau
         {
             if (otherTravelTile.IsMoving && !IsMoving && SameRowOrSameCol(otherTravelTile))//
             {
-                if (sameSpeedWithOther) moveSpeed = otherTravelTile.moveSpeed +20;
+                if (sameSpeedWithOther) moveSpeed = otherTravelTile.moveSpeed;
                 Move(otherTravelTile.MoveDir);
             }
         }

@@ -7,6 +7,8 @@ public class Tile : MonoBehaviour
 {
     public Node currNode;
     
+    public bool isStopTile = true;
+    
     public enum DIR
     {
         NONE,
@@ -15,6 +17,16 @@ public class Tile : MonoBehaviour
         LEFT,
         RIGHT
     };
+
+    public DIR FlipDir(DIR dir)
+    {
+        if (dir == DIR.UP) return DIR.DOWN;
+        if (dir == DIR.DOWN) return DIR.UP;
+        if (dir == DIR.LEFT) return DIR.RIGHT;
+        if (dir == DIR.RIGHT) return DIR.LEFT;
+        else return DIR.NONE;
+    }
+
 
     void Start()
     {
@@ -54,9 +66,10 @@ public class Tile : MonoBehaviour
         currNode = snapNode;
     }
     
-    protected bool SameRowOrSameCol(Tile otherTile)
+    public bool SameRowOrSameCol(Tile otherTile)
     {
         Node otherNode = otherTile.currNode;
         return (currNode.x == otherNode.x || currNode.y == otherNode.y);
     }
+
 }

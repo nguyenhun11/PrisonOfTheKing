@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Tile.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Brick_OneWay.cs" />
+    <Compile Include="Assets\Scripts\Brick_Fall.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\TravelTile.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
