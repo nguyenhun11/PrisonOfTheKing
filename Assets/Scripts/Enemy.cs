@@ -4,17 +4,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private TravelTile _travelTile;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnEnable()
     {
@@ -24,9 +13,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
- 
-
-    private void Die()
+    public void Die()
     {
         Destroy(gameObject);
     }

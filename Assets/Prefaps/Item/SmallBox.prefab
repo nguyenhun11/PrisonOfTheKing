@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1220373599384894210}
   - component: {fileID: 7917526111274302458}
   - component: {fileID: 5727076617647295185}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: SmallBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1696861
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 673174dc6049d4b4ea12a086f406164a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b2b085be40f9343b099a3a7bc53c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStopTile: 1
 --- !u!50 &7917526111274302458
 Rigidbody2D:
   serializedVersion: 5
@@ -159,11 +160,11 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.044600964, y: 0}
+  m_Offset: {x: -0.017350435, y: 0.010943115}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -173,5 +174,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1373644, y: 1}
+  m_Size: {x: 0.8857484, y: 0.80947363}
   m_EdgeRadius: 0

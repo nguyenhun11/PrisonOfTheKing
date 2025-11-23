@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2975606471447190145}
   - component: {fileID: 6719656903194565726}
   - component: {fileID: 1513969287270039992}
-  - component: {fileID: 8440794910059205609}
   - component: {fileID: 6673060905754508131}
+  - component: {fileID: 8440794910059205609}
   - component: {fileID: 4364429627743749055}
+  - component: {fileID: 4040353239091919244}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1683881519
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4236677631525818213, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -188,18 +189,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8440794910059205609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844914448932651767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7559167f457770e4ca9056156acd63c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6673060905754508131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,12 +201,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c22a9f987e00d4295acf5725311bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStopTile: 1
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
   moveSpeed: 5
   canMoveByOthers: 1
   sameSpeedWithOther: 0
+--- !u!114 &8440794910059205609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844914448932651767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7559167f457770e4ca9056156acd63c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4364429627743749055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,3 +242,15 @@ MonoBehaviour:
   onLeft: 0
   onUp: 0
   onDown: 0
+--- !u!114 &4040353239091919244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844914448932651767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb12c8bd6c6870428a2df8fe3388aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

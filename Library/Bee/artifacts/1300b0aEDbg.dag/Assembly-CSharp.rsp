@@ -445,9 +445,13 @@
 "Assets/Scripts/Brick_Fall.cs"
 "Assets/Scripts/Brick_OneWay.cs"
 "Assets/Scripts/Enemy.cs"
+"Assets/Scripts/Item_Ball.cs"
+"Assets/Scripts/Item_Bomb.cs"
 "Assets/Scripts/Node.cs"
 "Assets/Scripts/PlayerAnimator.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/PlayerState.cs"
+"Assets/Scripts/Road_Full.cs"
 "Assets/Scripts/Tile.cs"
 "Assets/Scripts/TravelTile.cs"
 -langversion:9.0

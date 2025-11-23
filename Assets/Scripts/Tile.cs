@@ -59,11 +59,12 @@ public class Tile : MonoBehaviour
         return vec.y > 0 ? Tile.DIR.UP : Tile.DIR.DOWN;
     }
     
-    protected void SnapToNode()
+    public Node SnapToNode()
     {
         Node snapNode = new Node(transform.position);
         snapNode.SetToNode(this);
         currNode = snapNode;
+        return snapNode;
     }
     
     public bool SameRowOrSameCol(Tile otherTile)
