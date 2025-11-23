@@ -3,8 +3,8 @@ Các loại gạch cần làm
     - Gạch 1 chiều
     - Gạch trơn
     - Bom và Bom di chuyển
-- Lửa
-- Dưa hấu (chạm wall là bể)
+    - Lửa
+    - Dưa hấu (chạm wall là bể)
     - Thùng (chạm wall khổng bể)
 - Lò xo phản lực
 - Gạch di chuyển

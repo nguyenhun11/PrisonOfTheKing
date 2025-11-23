@@ -447,6 +447,8 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/Item_Ball.cs"
 "Assets/Scripts/Item_Bomb.cs"
+"Assets/Scripts/Item_BrokeBox.cs"
+"Assets/Scripts/Item_Fire.cs"
 "Assets/Scripts/Node.cs"
 "Assets/Scripts/PlayerAnimator.cs"
 "Assets/Scripts/PlayerMovement.cs"

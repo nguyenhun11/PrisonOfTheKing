@@ -13,9 +13,6 @@ public class TravelTile : Tile
     [Header("Interaction Settings")]
     public bool canMoveByOthers = true;     
     public bool sameSpeedWithOther = true;  
-    
-    // true: Vật đẩy mình sẽ bị dừng lại (Cơ chế Đá Banh)
-    // false: Vật đẩy mình sẽ đi theo (Cơ chế Đẩy Hộp)
     public bool stopOther = false;           
 
     private TravelTile _followerTile = null;
@@ -172,14 +169,14 @@ public class TravelTile : Tile
             _followerTile = null; 
         }
 
-        OnTravelTileStop?.Invoke();
+        if(invokeEvent) OnTravelTileStop?.Invoke();
     }
 
-    public void Fall()
+    public void Fall(bool invokeEvent = true)
     {
-        Stop();
+        Stop(false);
         Move(DIR.DOWN);
-        OnTravelTileFall?.Invoke();
+        if(invokeEvent) OnTravelTileFall?.Invoke();
     }
     
     // --- TRIGGER ENTER: Xử lý va chạm ĐỘNG (từ xa lao tới) ---
@@ -203,14 +200,14 @@ public class TravelTile : Tile
                     // Check kết quả đẩy
                     if (staticTravelTile.stopOther)
                     {
-                        this.Stop(false); // Đá bóng -> Dừng
+                        this.Stop(); // Đá bóng -> Dừng
                     }
                     else
                     {
                         // Nếu đẩy hộp mà hộp bị kẹt tường (không di chuyển được) -> Mình dừng
                         if (!staticTravelTile.IsMoving) 
                         {
-                            this.Stop(false);
+                            this.Stop();
                         }
                         else 
                         {
@@ -220,7 +217,7 @@ public class TravelTile : Tile
                 }
                 else if (staticTravelTile.isStopTile)
                 {
-                    this.Stop(false); // Gặp đá tảng -> Dừng
+                    this.Stop(); // Gặp đá tảng -> Dừng
                 }
             }
         }
@@ -228,7 +225,7 @@ public class TravelTile : Tile
         {
             if (SameRowOrSameCol(staticTile) && staticTile.isStopTile)
             {
-                this.Stop(false); // Gặp tường -> Dừng
+                this.Stop(); // Gặp tường -> Dừng
             }
         }
     }
