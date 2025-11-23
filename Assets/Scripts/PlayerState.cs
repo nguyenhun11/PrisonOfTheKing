@@ -7,7 +7,6 @@ public class PlayerState : MonoBehaviour
     private void Start()
     {
         _travelTile = GetComponent<TravelTile>();
-        _travelTile.OnTravelTileFall += Fall;
     }
     
     public bool StandOnDown;
@@ -18,6 +17,7 @@ public class PlayerState : MonoBehaviour
     public void Fall()
     {
         Debug.Log("Fall");
+        _travelTile.Move(Tile.DIR.DOWN);
     }
 
     public void Die()

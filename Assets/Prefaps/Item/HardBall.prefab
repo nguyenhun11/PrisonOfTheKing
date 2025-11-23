@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7048569318001682413}
   - component: {fileID: 9167037818783175525}
-  - component: {fileID: 5979411303070858523}
   - component: {fileID: 2047703667981611248}
   - component: {fileID: 912276813316701382}
+  - component: {fileID: 5979411303070858523}
   - component: {fileID: 7569848145592726633}
   m_Layer: 0
   m_Name: HardBall
@@ -91,27 +91,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5979411303070858523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3710197382064474947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11c22a9f987e00d4295acf5725311bb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isStopTile: 1
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  DebugIsMoving: 0
-  moveSpeed: 5
-  canMoveByOthers: 1
-  sameSpeedWithOther: 1
-  stopOther: 1
 --- !u!61 &2047703667981611248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,7 +125,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0025515556, y: -0.004521966}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -156,7 +135,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.76806617, y: 0.7777755}
   m_EdgeRadius: 0
 --- !u!50 &912276813316701382
 Rigidbody2D:
@@ -185,6 +164,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5979411303070858523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710197382064474947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11c22a9f987e00d4295acf5725311bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStopTile: 1
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  DebugIsMoving: 0
+  moveSpeed: 5
+  canMoveByOthers: 1
+  sameSpeedWithOther: 1
+  stopOther: 1
 --- !u!114 &7569848145592726633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,3 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakWhenStop: 0
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  onGround: 0

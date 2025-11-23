@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Item_Bomb : MonoBehaviour
@@ -10,20 +11,34 @@ public class Item_Bomb : MonoBehaviour
     
     private bool isHeadingToEnd = true; 
 
-    void Start()
+    // Item_Bomb.cs
+
+    void Awake()
     {
         _travelTile = GetComponent<TravelTile>();
+    
+        // Đăng ký sự kiện thì OK trong Awake
+        _travelTile.OnTravelTileStop += ChangeDirection;
+    }
+
+    void Start()
+    {
+        // Kiểm tra node của chính mình
         if (_travelTile.currNode == null) _travelTile.SnapToNode();
-   
-        
+
+        // Kiểm tra tham chiếu
         if (roadFull == null || roadFull.startPoint == null || roadFull.endPoint == null)
         {
-            Debug.LogError("Boom: Chưa gán Road_Full hoặc Road bị thiếu điểm Start/End!");
+            Debug.LogError("Boom: Thiếu Road hoặc Start/End points!");
             return;
         }
 
-        _travelTile.OnTravelTileStop += ChangeDirection;
+        // --- KHẮC PHỤC LỖI NULL ---
+        // Đảm bảo các điểm đích đã có Node trước khi gọi lệnh đi
+        if (roadFull.startPoint.currNode == null) roadFull.startPoint.SnapToNode();
+        if (roadFull.endPoint.currNode == null) roadFull.endPoint.SnapToNode();
 
+        // Bắt đầu di chuyển lần đầu tiên TẠI ĐÂY
         ChangeDirection(); 
     }
 

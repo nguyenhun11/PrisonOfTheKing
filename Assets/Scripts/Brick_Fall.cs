@@ -13,15 +13,16 @@ public class Brick_Fall : MonoBehaviour
     {
         if (collision.TryGetComponent(out TravelTile travelTile))
         {
-            if (travelTile != null && travelTile.IsMoving && _tile.SameRowOrSameCol(travelTile))
-            {
+            if (travelTile.IsMoving && _tile.SameRowOrSameCol(travelTile))
+            { 
                 if (travelTile.MoveDir == Tile.DIR.DOWN)
                 {
                     travelTile.Stop();
                 }
                 else
                 {
-                    travelTile.Fall();
+                    travelTile.Stop();
+                    if (collision.TryGetComponent(out PlayerState playerState)) playerState.Fall();
                 }
             }
         }

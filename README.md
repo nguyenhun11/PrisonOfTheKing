@@ -6,7 +6,7 @@ Các loại gạch cần làm
     - Lửa
     - Dưa hấu (chạm wall là bể)
     - Thùng (chạm wall khổng bể)
-- Lò xo phản lực
+    - Lò xo phản lực
 - Gạch di chuyển
 - Gạch dính
 

@@ -51,6 +51,7 @@
     <Compile Include="Assets\Scripts\Item_BrokeBox.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Item_Ball.cs" />
+    <Compile Include="Assets\Scripts\Item_Spring.cs" />
     <Compile Include="Assets\Scripts\Brick_OneWay.cs" />
     <Compile Include="Assets\Scripts\Brick_Fall.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />

@@ -1,27 +1,31 @@
 using System;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 
-public class Node //Vị trí trong game
+// [TỐI ƯU] Nên cân nhắc đổi 'class' thành 'struct' nếu không cần null,
+// sẽ nhẹ hơn cho bộ nhớ (Garbage Collector) vì Node chỉ chứa dữ liệu nhỏ.
+public class Node : IEquatable<Node> 
 {
     public int x;
     public int y;
 
-    private Node _upNode;
-    private Node _downNode;
-    private Node _leftNode;
-    private Node _rightNode;
-
-    public Node(float x, float y) //Snap
+    // --- SỬA LỖI ---
+    // Constructor cũ của bạn quên gán this.y
+    public Node(float x, float y)
     {
-        this.x = (int)Mathf.FloorToInt(x);
-        this.y = (int)Mathf.FloorToInt(y);
+        this.x = Mathf.FloorToInt(x);
+        this.y = Mathf.FloorToInt(y); // Đã thêm dòng này
+    }
+
+    public Node(int x, int y) // Thêm constructor int cho tiện
+    {
+        this.x = x;
+        this.y = y;
     }
 
     public Node(Vector3 position)
     {
-        this.x = (int)Mathf.FloorToInt(position.x);
-        this.y = (int)Mathf.FloorToInt(position.y);
+        this.x = Mathf.FloorToInt(position.x);
+        this.y = Mathf.FloorToInt(position.y);
     }
 
     public void SetToNode(Tile tile)
@@ -38,16 +42,55 @@ public class Node //Vị trí trong game
     {
         switch (dir)
         {
-            case Tile.DIR.UP: return _upNode;
-            case Tile.DIR.DOWN: return  _downNode;
-            case Tile.DIR.LEFT: return  _leftNode;
-            case Tile.DIR.RIGHT: return  _rightNode;
+            case Tile.DIR.UP: return new Node(x, y + 1);
+            case Tile.DIR.DOWN: return new Node(x, y - 1);
+            case Tile.DIR.LEFT: return new Node(x - 1, y);
+            case Tile.DIR.RIGHT: return new Node(x + 1, y);
             default: return null;
         }
     }
 
     public override string ToString()
     {
-        return string.Format("[{0}, {1}]", x, y);
+        return $"[{x}, {y}]";
+    }
+
+    // --- PHẦN QUAN TRỌNG ĐỂ SO SÁNH == ---
+
+    // 1. Hàm so sánh logic
+    public bool Equals(Node other)
+    {
+        if (other is null) return false;
+        if (ReferenceEquals(this, other)) return true;
+        return x == other.x && y == other.y;
+    }
+
+    // 2. Ghi đè Equals của object (cần thiết cho các collection như List.Contains)
+    public override bool Equals(object obj)
+    {
+        if (obj is null) return false;
+        if (ReferenceEquals(this, obj)) return true;
+        if (obj.GetType() != this.GetType()) return false;
+        return Equals((Node)obj);
+    }
+
+    // 3. Ghi đè GetHashCode (Bắt buộc khi override Equals, dùng cho Dictionary/HashSet)
+    public override int GetHashCode()
+    {
+        // Cách combine hash code đơn giản và hiệu quả
+        return HashCode.Combine(x, y); 
+    }
+
+    // 4. Overload toán tử ==
+    public static bool operator ==(Node a, Node b)
+    {
+        if (a is null) return b is null;
+        return a.Equals(b);
+    }
+
+    // 5. Overload toán tử !=
+    public static bool operator !=(Node a, Node b)
+    {
+        return !(a == b);
     }
 }
