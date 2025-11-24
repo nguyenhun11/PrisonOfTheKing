@@ -19,9 +19,6 @@ public class Brick_MoveOneNode : MonoBehaviour
         {
             return nextNode;
         }
-        
-        // Trả về currNode để báo hiệu: "Tôi muốn đứng yên tại chỗ"
-        // TravelTile sẽ nhận diện điều này và hủy lệnh di chuyển.
         return _travelTile.currNode; 
     }
     

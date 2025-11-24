@@ -28,7 +28,7 @@ public class Item_Ball : MonoBehaviour
         }
 
         // Check ngay khi sinh ra để tránh lơ lửng
-        CheckOnGround();
+        //CheckOnGround();
     }
     
     private void OnDisable()
@@ -43,33 +43,40 @@ public class Item_Ball : MonoBehaviour
             HandleBreak();
             return;
         }
-
+        Debug.Log("Ball stop and not break");
         // KHÔNG check ngay lập tức, hãy chờ vật lý ổn định
         StartCoroutine(CheckGroundAndDecide());
     }
 
+    // Trong Item_Ball.cs
+
     private IEnumerator CheckGroundAndDecide()
     {
-        // Chờ hết frame hiện tại (để đảm bảo bóng đã snap vào đúng ô Grid)
+        // Chờ hết frame để vật lý và vị trí snap ổn định
         yield return new WaitForEndOfFrame();
 
-        // 1. Kiểm tra đất bằng BoxCast
-        CheckOnGround();
+        // 1. Kiểm tra xem có đất không (Logic thụ động, không đẩy ai cả)
+        onGround = _travelTile.CheckOnGround();
+        Debug.Log("Check on Ground: " + onGround);
 
         // 2. Quyết định
         if (!onGround)
         {
-            // Nếu không có đất -> Rơi xuống
+            // Nếu không có đất -> Thử rơi xuống
             if (gameObject.activeSelf && !_travelTile.IsMoving)
             {
-                _travelTile.Move(Tile.DIR.DOWN);
+                // Move trả về bool: True nếu đi được, False nếu bị chặn
+                bool moveSuccess = _travelTile.Move(Tile.DIR.DOWN);
+            
+                // Nếu Move trả về False (nghĩa là Raycast trong hàm Move phát hiện vật cản mà CheckOnGround bỏ sót,
+                // hoặc logic Move không cho phép đi), ta ép onGround = true để tránh gọi Move liên tục.
+                if (!moveSuccess)
+                {
+                    onGround = true;
+                }
             }
         }
-        else
-        {
-            // Có đất -> Đứng yên (Không làm gì cả)
-            // Lúc này logic TravelTile đã gọi Stop() rồi, nên bóng sẽ nằm im.
-        }
+        // Nếu onGround = true -> Đứng yên, không làm gì cả.
     }
 
     private void CheckOnGround()

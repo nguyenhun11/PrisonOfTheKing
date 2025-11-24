@@ -40,7 +40,7 @@ public class TravelTile : Tile
 
     private void MoveToTarget()
     {
-        if (IsMoving && _targetNode != null)
+        if (IsMoving && _targetNode != null && (currNode.x != _targetNode.x || currNode.y != _targetNode.y))
         {
             Vector3 targetPos = _targetNode.Position();
             transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
@@ -52,61 +52,61 @@ public class TravelTile : Tile
         }
     }
 
-    // --- CÁC HÀM DI CHUYỂN
-
-    public void Move(Tile.DIR dir)
+    public bool Move(Tile.DIR dir)
     {
-        Debug.Log(name + ": SO want me to go to " + dir);
-        if (dir == Tile.DIR.NONE || IsMoving) return; // Nếu đang đi thì không nhận lệnh mới
+        // Debug.Log(name + ": SO want me to go to " + dir);
+        if (dir == Tile.DIR.NONE || IsMoving) return false;
 
-        Vector2 dirVec = DirToVector2[dir];
-        
-        // Ban raycast
+        // 1. CHECK VẬT CẢN NGAY TRƯỚC MẶT
         if (_collider2D != null) _collider2D.enabled = false;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirVec, 1.0f, wallLayer);
+        Vector2 dirVec = DirToVector2[dir];
+
+        // Lưu ý: Nên dùng độ dài < 1 (ví dụ 0.8f) để tránh bắn xuyên sang ô kế tiếp quá sâu
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirVec, 1f, wallLayer);
+
         if (_collider2D != null) _collider2D.enabled = true;
-        
+
         if (hit.collider != null)
         {
-            // A. Gặp TravelTile (Hộp, Bóng, Người khác)
+            // TH1: Gặp vật có thể đẩy được (TravelTile)
             if (hit.collider.TryGetComponent(out TravelTile neighborTile))
             {
-                // Nếu thằng kia đứng yên và cho phép đẩy
                 if (!neighborTile.IsMoving && neighborTile.canMoveByOthers)
                 {
-                    // --- ĐỆ QUY: RA LỆNH CHO NÓ ĐI TRƯỚC ---
                     if (neighborTile.sameSpeedWithOther) neighborTile.moveSpeed = this.moveSpeed;
+
+                    // Đệ quy: Ra lệnh cho thằng kia đi trước
+                    if (!neighborTile.Move(dir))
+                    {
+                        Debug.Log(name + $"goi {neighborTile.name} di chuyen khong thanh cong");
+                        if (neighborTile.isStopTile) return false;
+                        neighborTile.Stop();//Enemy chet
+                        return true;
+                    }
+                    Debug.Log(name + $"goi {neighborTile.name} di chuyen THANH CONG");
                     
-                    // Gọi nó di chuyển
-                    neighborTile.Move(dir);
+                    // nếu di chuyển được, nhưng mình bi chan, mình dung
+                    if (neighborTile.stopOther) return false;
+                    //if (!neighborTile.IsMoving) return false; // Kiem lai cho chac
 
-                    // --- KIỂM TRA LẠI SAU KHI RA LỆNH ---
-                    // TH1: Đá Banh (stopOther = true) -> Nó đi, mình đứng
-                    if (neighborTile.stopOther) return;
-
-                    // TH2: Đẩy Hộp -> Nếu đẩy xong mà nó vẫn đứng yên (do nó bị kẹt tường) -> Mình cũng đứng
-                    if (!neighborTile.IsMoving) return;
-
-                    // Nếu nó đi thành công -> Mình đi theo (Gán follower)
                     neighborTile.SetFollower(this);
                 }
-                // Nếu gặp vật không đẩy được hoặc đang di chuyển ngược chiều -> Đứng yên
-                else 
+                else
                 {
-                    return; 
+                    return false; // Nó đang đi hoặc không cho đẩy -> Mình dừng
                 }
             }
-            // B. Gặp Tile thường (Tường, Đá cố định)
             else if (hit.collider.TryGetComponent(out Tile wall))
             {
-                if (wall.isStopTile) return; // Bị chặn -> Đứng yên
+                if (wall.isStopTile) return false;
+            }
+            else
+            {
+                return false; // Gặp tường cứng -> Return ngay lập tức, KHÔNG set IsMoving = true
             }
         }
-
-        // --- BƯỚC 3: NẾU KHÔNG CÒN VẬT CẢN -> TÌM ĐÍCH ĐẾN ---
-        Node customTarget = null;
         
-        // Hỏi xem có ai (như Brick_MoveOneNode) muốn chỉ định đích không?
+        Node customTarget = null;
         if (OnCalculateTargetNode != null)
         {
             customTarget = OnCalculateTargetNode.Invoke(dir);
@@ -114,26 +114,19 @@ public class TravelTile : Tile
 
         if (customTarget != null)
         {
-            // Nếu có chỉ định đặc biệt -> Đi đến đó
-            if (customTarget.x == currNode.x && customTarget.y == currNode.y)
-            {
-                // Return ngay lập tức. IsMoving vẫn là FALSE.
-                // Điều này giúp vật đang đẩy phía sau biết là "Thằng này không đi được" -> Nó sẽ dừng đẩy.
-                return; 
-            }
-            Move(customTarget);
+            if (customTarget.x == currNode.x && customTarget.y == currNode.y) return false;
+            return Move(customTarget);
         }
         else
         {
-            // Nếu không -> Đi theo mặc định (Bắn Raycast tìm tường xa)
             SetDestination(dirVec);
-            IsMoving = true; 
+            IsMoving = true;
             MoveDir = dir;
-            // OnTravelTileMove?.Invoke(dir); // Có thể bỏ hoặc giữ tùy logic UI
+            return true;
         }
     }
-    
-    public void Move(Node target)
+
+    public bool Move(Node target)
     {
         //if (IsMoving) return;
         Debug.Log(name + ": SO want me to go to " + target);
@@ -145,31 +138,13 @@ public class TravelTile : Tile
             else
                 MoveDir = (currNode.x > target.x) ? DIR.LEFT : DIR.RIGHT;
             IsMoving = true;
+            return true;
             //OnTravelTileMove?.Invoke(MoveDir);
         }
-    }
 
-    public void SetFollower(TravelTile follower)
-    {
-        _followerTile = follower;
+        return false;
     }
-
-    void SetDestination(Vector2 direction)
-    {
-        // Raycast này tìm điểm đích xa (Tường)
-        if (_collider2D != null) _collider2D.enabled = false;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 100, wallLayer);
-        if (_collider2D != null) _collider2D.enabled = true;
-        
-        if (hit.collider != null)
-        {
-            Vector3 hitPoint = hit.point;
-            Vector3 fixedPos = hitPoint - (Vector3)(direction * 0.5f);
-            _targetNode = new Node(fixedPos);
-        }
-    }
-
-    // --- HÀM STOP (GỌN HƠN) ---
+    
     public void Stop(bool invokeEvent = true)
     {
         IsMoving = false; 
@@ -189,7 +164,41 @@ public class TravelTile : Tile
         if(invokeEvent) OnTravelTileStop?.Invoke();
     }
     
-    // --- TRIGGER ENTER: Xử lý va chạm ĐỘNG (từ xa lao tới) ---
+    // Trong TravelTile.cs
+
+    public bool CheckOnGround()
+    {
+        // 1. Xác định vị trí tâm của ô vuông bên dưới
+        Vector2 checkPos = (Vector2)transform.position + Vector2.down;
+
+        // 2. Kiểm tra xem tại điểm đó có ai thuộc wallLayer đang đứng không
+        // Bán kính 0.2f là đủ nhỏ để nằm gọn trong ô, không liếm sang ô bên cạnh
+        bool hasGround = Physics2D.OverlapCircle(checkPos, 0.2f, wallLayer) != null;
+
+        return hasGround;
+    }
+
+
+    public void SetFollower(TravelTile follower)
+    {
+        _followerTile = follower;
+    }
+
+    private void SetDestination(Vector2 direction)
+    {
+        // Raycast này tìm điểm đích xa (Tường)
+        if (_collider2D != null) _collider2D.enabled = false;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 100, wallLayer);
+        if (_collider2D != null) _collider2D.enabled = true;
+        
+        if (hit.collider != null)
+        {
+            Vector3 hitPoint = hit.point;
+            Vector3 fixedPos = hitPoint - (Vector3)(direction * 0.5f);
+            _targetNode = new Node(fixedPos);
+        }
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!IsMoving) return; // Chỉ người đang đi mới xử lý
@@ -205,23 +214,30 @@ public class TravelTile : Tile
                     {
                         staticTravelTile.moveSpeed = this.moveSpeed;
                     }
-                    staticTravelTile.Move(this.MoveDir);
-                    
-                    if (staticTravelTile.stopOther)//Dung lai hoac di tiep
+
+                    if (staticTravelTile.Move(this.MoveDir))
                     {
-                        this.Stop();
-                    }
-                    else
-                    {
-                        // Nếu đẩy hộp mà hộp bị kẹt tường (không di chuyển được) -> Mình dừng
-                        if (!staticTravelTile.IsMoving) 
+                        if (staticTravelTile.stopOther) //Dung lai hoac di tiep
                         {
                             this.Stop();
                         }
-                        else 
+                        else
                         {
-                            staticTravelTile.SetFollower(this); // Đẩy hộp -> Đi theo
+                            // Nếu đẩy hộp mà hộp bị kẹt tường (không di chuyển được) -> Mình dừng
+                            if (!staticTravelTile.IsMoving)
+                            {
+                                this.Stop();
+                            }
+                            else
+                            {
+                                staticTravelTile.SetFollower(this); // Đẩy hộp -> Đi theo
+                            }
                         }
+                    }
+                    else
+                    {
+                        staticTravelTile.Stop();
+                        if (staticTravelTile.isStopTile) Stop();
                     }
                 }
                 else if (staticTravelTile.isStopTile)

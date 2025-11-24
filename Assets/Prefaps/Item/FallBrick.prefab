@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3179015416508895249}
   - component: {fileID: 5059193563992870228}
   - component: {fileID: 176357574556832832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FallBrick
   m_TagString: Untagged
   m_Icon: {fileID: 0}

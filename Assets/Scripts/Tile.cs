@@ -73,4 +73,15 @@ public class Tile : MonoBehaviour
         return (currNode.x == otherNode.x || currNode.y == otherNode.y);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out TravelTile travelTile))
+        {
+            if (isStopTile)
+            {
+                travelTile.Stop();
+            }
+        }
+    }
+
 }

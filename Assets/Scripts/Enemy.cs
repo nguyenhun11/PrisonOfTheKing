@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
+        _travelTile.OnTravelTileStop -= Die;
         Destroy(gameObject);
     }
 }
