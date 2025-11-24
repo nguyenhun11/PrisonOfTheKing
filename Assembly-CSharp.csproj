@@ -50,6 +50,7 @@
     <Compile Include="Assets\Scripts\Tile.cs" />
     <Compile Include="Assets\Scripts\Item_BrokeBox.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Brick_MoveOneNode.cs" />
     <Compile Include="Assets\Scripts\Item_Ball.cs" />
     <Compile Include="Assets\Scripts\Item_Spring.cs" />
     <Compile Include="Assets\Scripts\Brick_OneWay.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Assets\Scripts\TravelTile.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Item_Bomb.cs" />
+    <Compile Include="Assets\Scripts\Road_Node.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimator.cs" />
     <Compile Include="Assets\Scripts\PlayerState.cs" />
     <Compile Include="Assets\Scripts\Road_Full.cs" />

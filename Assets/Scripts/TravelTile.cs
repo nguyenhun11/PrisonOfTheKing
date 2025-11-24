@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class TravelTile : Tile
@@ -19,7 +20,11 @@ public class TravelTile : Tile
     private Collider2D _collider2D;
 
     public delegate void StateDelegate();
+
+    public delegate void MoveDelegate(DIR dir);
     public event StateDelegate OnTravelTileStop;
+    //public event MoveDelegate OnTravelTileMove;
+    public Func<Tile.DIR, Node> OnCalculateTargetNode;
 
     void Awake() // Dùng Awake an toàn hơn Start
     {
@@ -99,15 +104,33 @@ public class TravelTile : Tile
         }
 
         // --- BƯỚC 3: NẾU KHÔNG CÒN VẬT CẢN -> TÌM ĐÍCH ĐẾN ---
-        // (Lúc này đường đã thoáng vì thằng hàng xóm đã bắt đầu di chuyển rồi)
+        Node customTarget = null;
         
-        // Tắt collider lần nữa để tìm đích xa (SetDestination dùng Raycast xa)
-        
-        SetDestination(dirVec);
-        
-        // Kích hoạt di chuyển
-        IsMoving = true; 
-        MoveDir = dir;
+        // Hỏi xem có ai (như Brick_MoveOneNode) muốn chỉ định đích không?
+        if (OnCalculateTargetNode != null)
+        {
+            customTarget = OnCalculateTargetNode.Invoke(dir);
+        }
+
+        if (customTarget != null)
+        {
+            // Nếu có chỉ định đặc biệt -> Đi đến đó
+            if (customTarget.x == currNode.x && customTarget.y == currNode.y)
+            {
+                // Return ngay lập tức. IsMoving vẫn là FALSE.
+                // Điều này giúp vật đang đẩy phía sau biết là "Thằng này không đi được" -> Nó sẽ dừng đẩy.
+                return; 
+            }
+            Move(customTarget);
+        }
+        else
+        {
+            // Nếu không -> Đi theo mặc định (Bắn Raycast tìm tường xa)
+            SetDestination(dirVec);
+            IsMoving = true; 
+            MoveDir = dir;
+            // OnTravelTileMove?.Invoke(dir); // Có thể bỏ hoặc giữ tùy logic UI
+        }
     }
     
     public void Move(Node target)
@@ -121,7 +144,8 @@ public class TravelTile : Tile
                 MoveDir = (currNode.y > target.y) ? DIR.DOWN : DIR.UP;
             else
                 MoveDir = (currNode.x > target.x) ? DIR.LEFT : DIR.RIGHT;
-            IsMoving = true; 
+            IsMoving = true;
+            //OnTravelTileMove?.Invoke(MoveDir);
         }
     }
 

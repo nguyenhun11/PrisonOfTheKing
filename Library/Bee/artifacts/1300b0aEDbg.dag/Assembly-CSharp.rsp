@@ -443,6 +443,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/Brick_Fall.cs"
+"Assets/Scripts/Brick_MoveOneNode.cs"
 "Assets/Scripts/Brick_OneWay.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/Item_Ball.cs"
@@ -455,6 +456,7 @@
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerState.cs"
 "Assets/Scripts/Road_Full.cs"
+"Assets/Scripts/Road_Node.cs"
 "Assets/Scripts/Tile.cs"
 "Assets/Scripts/TravelTile.cs"
 -langversion:9.0
