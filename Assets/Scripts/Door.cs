@@ -14,6 +14,7 @@ public class Door : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _tile = GetComponent<Tile>();
+        CloseDoor();
     }
 
     public void CloseDoor()

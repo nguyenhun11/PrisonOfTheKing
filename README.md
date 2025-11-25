@@ -9,5 +9,4 @@
 - Mượt animation
 - Start scene và menu scene, chuyển cảnh
 - Win, Lose
-- Diaglogue
 - Sound, Effect
