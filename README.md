@@ -5,3 +5,9 @@
 - Ngoài tiêu diệt toàn bộ cai ngục (như logic game gốc), người chơi còn phải tìm được chìa khóa được giấu trong bóng tối, mở cánh cửa cuối cùng để ra ngoài
 ## Cốt truyện phụ
 ## Logic trò chơi
+## Task cần làm
+- Mượt animation
+- Start scene và menu scene, chuyển cảnh
+- Win, Lose
+- Diaglogue
+- Sound, Effect
