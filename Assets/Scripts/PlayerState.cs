@@ -7,6 +7,7 @@ public class PlayerState : MonoBehaviour
     private void Start()
     {
         _travelTile = GetComponent<TravelTile>();
+        _travelTile.OnTravelTileStop += Stop;
     }
     
     public bool StandOnDown;
@@ -24,6 +25,11 @@ public class PlayerState : MonoBehaviour
     {
         Debug.Log("Die");
         Destroy(gameObject);
+    }
+
+    public void Stop()
+    {
+        Controller_Sound.Play("Stop");
     }
     
 }

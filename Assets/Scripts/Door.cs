@@ -23,6 +23,7 @@ public class Door : MonoBehaviour
         _animator.ResetTrigger("Open");
         _animator.SetTrigger("Close");
         CanOpenDoor(false);
+        Controller_Sound.Play("CloseDoor");
     }
 
     public void CanOpenDoor(bool on)
@@ -35,6 +36,7 @@ public class Door : MonoBehaviour
     {
         _animator.ResetTrigger("Close");
         _animator.SetTrigger("Open");
+        Controller_Sound.Play("OpenDoor");
         OnDoorOpen?.Invoke();
     }
 

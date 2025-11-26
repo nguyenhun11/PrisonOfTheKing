@@ -10,6 +10,7 @@ public class UI_LevelList : MonoBehaviour
     private void Start()
     {
         GenerateLevelItems();
+        Controller_Sound.PlayMusic("Background");
     }
     
     void GenerateLevelItems()
@@ -26,6 +27,11 @@ public class UI_LevelList : MonoBehaviour
             item.ResetLevelState();
         }
         Instantiate(nullPrefab, transform);
+    }
+
+    private void OnDisable()
+    {
+        Controller_Sound.StopMusic();
     }
     
 }

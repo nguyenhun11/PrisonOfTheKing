@@ -208,6 +208,7 @@ public class TravelTile : Tile
             // Chỉ tương tác nếu thẳng hàng và vật kia đứng yên
             if (SameRowOrSameCol(staticTravelTile) && !staticTravelTile.IsMoving)
             {
+                Controller_Sound.Play("Hit", true);
                 if (staticTravelTile.canMoveByOthers)//Day
                 {
                     if (staticTravelTile.sameSpeedWithOther)

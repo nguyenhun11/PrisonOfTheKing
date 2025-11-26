@@ -71,7 +71,7 @@ public class Controller_Dialogue : MonoBehaviour
         foreach (char letter in _currentData.lines[_dialogueIndex].text) // _currentData.dialogueLines[_dialogueIndex]
         {
             dialogueText.text += letter;
-            // SoundEffectManager.PlayVoice(...);
+            Controller_Sound.Play("Type");
             yield return new WaitForSecondsRealtime(_currentData.typingSpeed); // Dùng Realtime vì TimeScale đang = 0
         }
         

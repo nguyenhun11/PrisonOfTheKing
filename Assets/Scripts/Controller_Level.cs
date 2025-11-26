@@ -104,6 +104,7 @@ public class Controller_Level : MonoBehaviour
             key.gameObject.SetActive(on);
             if (on)
             {
+                Controller_Sound.Play("Key", true);
                 key.OnKeyClaimed += ClaimKey;
             }
         }
@@ -112,6 +113,7 @@ public class Controller_Level : MonoBehaviour
     private void ClaimKey()
     {
         key.OnKeyClaimed -= ClaimKey;
+        Controller_Sound.Play("Key", true);
         if (door != null)
         {
             door.CanOpenDoor(true);

@@ -37,6 +37,10 @@ public class Brick_OneWay : MonoBehaviour
             {
                 travelTile.Stop();
             }
+            else
+            {
+                Controller_Sound.Play("OneWayBrick");
+            }
         }
     }
 
