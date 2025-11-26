@@ -10,7 +10,6 @@ public class Controller_Pause : MonoBehaviour
     
     public static void SetPause(bool pause)
     {
-        Debug.Log("pause set to" +  pause);
         IsGamePaused = pause;
         if (pause)
         {
@@ -18,5 +17,4 @@ public class Controller_Pause : MonoBehaviour
         }
         else Time.timeScale = 1;
     }
-    
 }

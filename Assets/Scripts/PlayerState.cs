@@ -25,4 +25,5 @@ public class PlayerState : MonoBehaviour
         Debug.Log("Die");
         Destroy(gameObject);
     }
+    
 }

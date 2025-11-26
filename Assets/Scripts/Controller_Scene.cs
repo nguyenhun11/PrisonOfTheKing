@@ -18,7 +18,7 @@ public class Controller_Scene : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -46,26 +46,19 @@ public class Controller_Scene : MonoBehaviour
         rawImageScreen.gameObject.SetActive(true);
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1; // Hiện lên ngay
-
-        // B2: Chuẩn bị và Chạy Video
+        
         videoPlayer.Prepare();
         
-        // Đợi video load xong và bắt đầu chạy
         while (!videoPlayer.isPlaying)
         {
             yield return null; 
         }
-
-        // B3: Chờ đến "điểm giữa" của video (lúc màn hình bị che hoàn toàn)
-        // Ví dụ video dài 2s, thì giây thứ 1 là lúc đen xì.
-        // Bạn có thể chờ 1 nửa thời gian:
+        
         float waitTime = (float)videoPlayer.length / 2f;
         yield return new WaitForSeconds(waitTime);
-
-        // B4: Load Scene ngầm
+        
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         
-        // Tắt chế độ tự động nhảy scene để mình kiểm soát (tuỳ chọn)
         operation.allowSceneActivation = false;
 
         // Chờ load xong 90%
@@ -87,6 +80,11 @@ public class Controller_Scene : MonoBehaviour
         canvasGroup.alpha = 0;
         canvasGroup.blocksRaycasts = false;
         rawImageScreen.gameObject.SetActive(false);
+    }
+    
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
 }

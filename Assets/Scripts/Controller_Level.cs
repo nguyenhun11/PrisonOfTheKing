@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +19,7 @@ public class Controller_Level : MonoBehaviour
     public Door door;
     
     [Header("Dialogue Data")]
-    public LevelDialogueData levelDialogueData;
+    public LevelData levelData;
     //public DialogueData startLevelDialogue;
 
     void Start()
@@ -36,16 +37,7 @@ public class Controller_Level : MonoBehaviour
         Controller_Dialogue.Instance.EndDialogue();
 
         Invoke(nameof(CheckEnemiesLeft), 1f);
-        // if (startLevelDialogue != null)
-        // {
-        //     Invoke(nameof(PlayStartDialogue), 1f);
-        // }
     }
-    
-    // private void PlayStartDialogue()
-    // {
-    //     Controller_Dialogue.Instance.StartDialogue(startLevelDialogue);
-    // }
 
     private void CheckEnemiesLeft()
     {
@@ -60,28 +52,20 @@ public class Controller_Level : MonoBehaviour
                 ShowKey(true);
             }
 
-            DialogueData dialogueData = levelDialogueData.GetDialogueByCount(_enemiesCount);
+            DialogueData dialogueData = levelData.GetDialogueByCount(_enemiesCount);
             if (dialogueData != null)
             {
                 Controller_Dialogue.Instance.StartDialogue(dialogueData);
+                
             }
         }
     }
 
     public void RePlay()
     {
-        
+        levelData.LoadLevel();
     }
-
-    public void GameWin()
-    {
-        
-    }
-
-    public void GameLose()
-    {
-        
-    }
+    
     
     public void Pause()
     {
@@ -120,6 +104,18 @@ public class Controller_Level : MonoBehaviour
 
     private void OpenDoor()
     {
-        Debug.Log("OpenDoor");
+        GameWin();
+    }
+
+    private void GameWin()
+    {
+        levelData.isFinish = true;
+        StartCoroutine(WaitGameWin());
+    }
+
+    private IEnumerator WaitGameWin()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        Controller_Scene.Instance.LoadScene("LevelSelect");
     }
 }

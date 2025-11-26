@@ -1,11 +1,12 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Door : MonoBehaviour
 {
     private Animator _animator;
     private Tile _tile;
-    private bool canOpenDoor = false;
+    private bool _canOpenDoor = false;
     
     public delegate void DoorOpenDelegate();
     public event DoorOpenDelegate OnDoorOpen;
@@ -27,7 +28,7 @@ public class Door : MonoBehaviour
     public void CanOpenDoor(bool on)
     {
         _tile.isStopTile = on;
-        canOpenDoor = on;
+        _canOpenDoor = on;
     }
 
     public void OpenDoor()
@@ -39,12 +40,15 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (canOpenDoor && other.CompareTag("Player"))
+        if (_canOpenDoor && other.CompareTag("Player"))
         {
             OpenDoor();
+            TravelTile playerTravelTile = other.GetComponent<TravelTile>();
+            PlayerAnimator playerAnimator = other.GetComponent<PlayerAnimator>();
+            CanOpenDoor(false);
+            if (playerTravelTile != null) playerTravelTile.Move(_tile.currNode);
+            if (playerAnimator != null) playerAnimator.JumpIn();
             OnDoorOpen?.Invoke();
         }
     }
-    
-    
 }

@@ -162,4 +162,10 @@ public class PlayerAnimator : MonoBehaviour
         scale.x = (right ? Mathf.Abs(scale.x) : -Mathf.Abs(scale.x));
         transform.localScale = scale;
     }
+
+    public void JumpIn()
+    {
+        _animator.SetTrigger("JumpIn");
+        
+    }
 }
