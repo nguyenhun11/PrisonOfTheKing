@@ -4,6 +4,23 @@ using UnityEngine;
 
 public class Controller_Level : MonoBehaviour
 {
+    #region  singleton
+
+    public static Controller_Level Instance;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    #endregion
     [Header("Enemy")]
     public GameObject  enemies;
     private List<Enemy> _enemiesList;
@@ -63,7 +80,7 @@ public class Controller_Level : MonoBehaviour
 
     public void RePlay()
     {
-        levelData.LoadLevel();
+        Controller_LoadLevel.Instance.LoadLevel();
     }
     
     
@@ -98,24 +115,20 @@ public class Controller_Level : MonoBehaviour
         if (door != null)
         {
             door.CanOpenDoor(true);
-            door.OnDoorOpen += OpenDoor;
+            door.OnDoorOpen += GameWin;
         }
-    }
-
-    private void OpenDoor()
-    {
-        GameWin();
     }
 
     private void GameWin()
     {
-        levelData.isFinish = true;
+        levelData.FinishLevel();
         StartCoroutine(WaitGameWin());
     }
+    
 
     private IEnumerator WaitGameWin()
     {
         yield return new WaitForSecondsRealtime(1);
-        Controller_Scene.Instance.LoadScene("LevelSelect");
+        Controller_Scene.Instance.LoadScene("Win");
     }
 }

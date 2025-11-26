@@ -10,6 +10,7 @@ public class Controller_UI : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {

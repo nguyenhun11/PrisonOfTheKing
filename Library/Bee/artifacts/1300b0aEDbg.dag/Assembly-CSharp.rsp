@@ -471,6 +471,8 @@
 "Assets/Scripts/TravelTile.cs"
 "Assets/Scripts/UI_Level.cs"
 "Assets/Scripts/UI_LevelList.cs"
+"Assets/Scripts/UI_OnGameSettingButton.cs"
+"Assets/Scripts/UI_WinButton.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

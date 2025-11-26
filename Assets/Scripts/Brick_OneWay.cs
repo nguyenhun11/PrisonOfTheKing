@@ -1,5 +1,3 @@
-using System;
-using TreeEditor;
 using UnityEngine;
 
 public class Brick_OneWay : MonoBehaviour
