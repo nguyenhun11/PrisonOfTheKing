@@ -32,7 +32,8 @@ public class Controller_Dialogue : MonoBehaviour
     }
     private void Update()
     {
-        if (IsDialogueActive && Input.GetKeyDown(KeyCode.Space))
+        if (!IsDialogueActive)  return;
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             NextLine();
         }

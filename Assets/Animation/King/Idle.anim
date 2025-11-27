@@ -24,24 +24,22 @@ AnimationClip:
       value: {fileID: 4236677631525818213, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
     - time: 0.06666667
       value: {fileID: 4028697958841943031, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - time: 0.15
+    - time: 0.16666667
       value: {fileID: -71890014864666246, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - time: 0.21666667
+    - time: 0.23333333
       value: {fileID: 1190557261751377376, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - time: 0.28333333
+    - time: 0.31666666
       value: {fileID: 5064041211780997922, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - time: 0.33333334
+    - time: 0.36666667
       value: {fileID: 8108171691728574818, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - time: 0.38333333
+    - time: 0.43333334
       value: {fileID: -1993345210608603527, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - time: 0.45
+    - time: 0.5
       value: {fileID: 4981596952429199082, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - time: 0.51666665
+    - time: 0.56666666
       value: {fileID: 7626191033687767977, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - time: 0.6
-      value: {fileID: -5613459758552902165, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
     - time: 0.6666667
-      value: {fileID: 4409867477321305065, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
+      value: {fileID: -5613459758552902165, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -74,7 +72,6 @@ AnimationClip:
     - {fileID: 4981596952429199082, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
     - {fileID: 7626191033687767977, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
     - {fileID: -5613459758552902165, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
-    - {fileID: 4409867477321305065, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
