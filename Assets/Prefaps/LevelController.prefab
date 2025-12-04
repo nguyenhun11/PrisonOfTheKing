@@ -67,7 +67,7 @@ MonoBehaviour:
   player: {fileID: 0}
   key: {fileID: 0}
   door: {fileID: 0}
-  levelData: {fileID: 11400000, guid: 8162b7a04e45a5049801bb2b899153ab, type: 2}
+  levelData: {fileID: 11400000, guid: 387550cc15f4e604fbb6f65f224c2d59, type: 2}
 --- !u!114 &8838614425235748621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3269311028888854355, guid: 81b05c734042ac94294883b28f12a84e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3468122088944392976, guid: 81b05c734042ac94294883b28f12a84e, type: 3}
       propertyPath: m_AnchorMax.x

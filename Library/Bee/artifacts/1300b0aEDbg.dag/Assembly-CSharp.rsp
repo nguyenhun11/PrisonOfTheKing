@@ -455,6 +455,7 @@
 "Assets/Scripts/Controller_Sound.cs"
 "Assets/Scripts/Controller_UI.cs"
 "Assets/Scripts/Door.cs"
+"Assets/Scripts/Effect.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/Item_Ball.cs"
 "Assets/Scripts/Item_Bomb.cs"

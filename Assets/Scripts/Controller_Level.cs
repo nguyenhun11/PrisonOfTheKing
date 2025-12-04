@@ -24,7 +24,7 @@ public class Controller_Level : MonoBehaviour
     [Header("Enemy")]
     public GameObject  enemies;
     private List<Enemy> _enemiesList;
-    private int _enemiesCount;
+    public int _enemiesCount;
     
     [Header("Player")]
     public GameObject  player;
@@ -58,7 +58,7 @@ public class Controller_Level : MonoBehaviour
 
     private void CheckEnemiesLeft()
     {
-        _enemiesList.RemoveAll(e => e == null);
+        _enemiesList.RemoveAll(e => e == null || e.IsDead);
         int count = _enemiesList.Count;
         bool isDifferent = _enemiesCount != count;
         _enemiesCount = count;
@@ -72,10 +72,18 @@ public class Controller_Level : MonoBehaviour
             DialogueData dialogueData = levelData.GetDialogueByCount(_enemiesCount);
             if (dialogueData != null)
             {
-                Controller_Dialogue.Instance.StartDialogue(dialogueData);
-                
+                StartCoroutine(PlayDialogueWithDelay(dialogueData, 1.5f));
             }
         }
+    }
+    
+    private IEnumerator PlayDialogueWithDelay(DialogueData data, float delayTime)
+    {
+        // Chờ... (lúc này animation quái chết/nổ đang diễn ra)
+        yield return new WaitForSeconds(delayTime);
+
+        // Hết giờ chờ, bắt đầu hội thoại
+        Controller_Dialogue.Instance.StartDialogue(data);
     }
 
     public void RePlay()

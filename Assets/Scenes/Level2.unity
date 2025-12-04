@@ -249,10 +249,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 844914448932651767, guid: f6bdc6d3db0c18648af03b081c3f31f0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6404220933318717466, guid: f6bdc6d3db0c18648af03b081c3f31f0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.39
@@ -7995,10 +7991,6 @@ PrefabInstance:
       propertyPath: enemies
       value: 
       objectReference: {fileID: 1626786046}
-    - target: {fileID: 4146724274830404289, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
-      propertyPath: levelData
-      value: 
-      objectReference: {fileID: 11400000, guid: 387550cc15f4e604fbb6f65f224c2d59, type: 2}
     - target: {fileID: 6436823060585703505, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

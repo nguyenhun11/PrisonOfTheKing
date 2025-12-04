@@ -221,3 +221,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _travelTile: {fileID: 4966852722566272984}
+  _killEffect: {fileID: 1528192506487397297, guid: 1dbf53a8a5f452e4aa773a4e384a8c31, type: 3}

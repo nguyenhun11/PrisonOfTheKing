@@ -6597,7 +6597,7 @@ PrefabInstance:
       objectReference: {fileID: 2137369248}
     - target: {fileID: 2741476081311451260, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4146724274830404289, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
       propertyPath: key
@@ -6615,6 +6615,10 @@ PrefabInstance:
       propertyPath: enemies
       value: 
       objectReference: {fileID: 1626786046}
+    - target: {fileID: 4146724274830404289, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
+      propertyPath: levelData
+      value: 
+      objectReference: {fileID: 11400000, guid: 8162b7a04e45a5049801bb2b899153ab, type: 2}
     - target: {fileID: 6436823060585703505, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
