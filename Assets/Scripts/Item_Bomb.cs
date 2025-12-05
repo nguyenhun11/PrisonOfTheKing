@@ -4,6 +4,7 @@ using UnityEngine;
 public class Item_Bomb : MonoBehaviour
 {
     private TravelTile _travelTile;
+    private Animator _animator;
     
     [Header("Moving on road")]
     public bool canMoveOnRoad = false; // Nên check cái này trong Start để tránh null
@@ -23,6 +24,7 @@ public class Item_Bomb : MonoBehaviour
 
     void Start()
     {
+        _animator = GetComponent<Animator>();
         // Kiểm tra node của chính mình
         if (_travelTile.currNode == null) _travelTile.SnapToNode();
 
@@ -71,7 +73,11 @@ public class Item_Bomb : MonoBehaviour
 
     private void Boom()
     {
-        Debug.Log("Boom nổ!");
+        _animator.SetTrigger("Boom");
+    }
+
+    public void DestroySelf()
+    {
         Destroy(gameObject);
     }
     

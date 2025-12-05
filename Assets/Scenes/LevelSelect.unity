@@ -396,6 +396,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8162b7a04e45a5049801bb2b899153ab, type: 2}
   - {fileID: 11400000, guid: 387550cc15f4e604fbb6f65f224c2d59, type: 2}
   - {fileID: 11400000, guid: a82f9b78dba2e724f9073f4ca93bdb2e, type: 2}
+  - {fileID: 11400000, guid: ba0a5dcd92229384fae41e4b9943b6e6, type: 2}
   levelPrefab: {fileID: 5108465071691799446, guid: 4e4ee1c265689f5429f0959b91f74179, type: 3}
   nullPrefab: {fileID: 2957676509763917716, guid: 9f2c5aa0566dde54b8232b4a568014f0, type: 3}
 --- !u!1 &1285533475

@@ -1182,21 +1182,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallBrick
       objectReference: {fileID: 0}
-    - target: {fileID: 3179015416508895249, guid: 9d4c7a6f08c1e7e46a6af64468392aa9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3179015416508895249, guid: 9d4c7a6f08c1e7e46a6af64468392aa9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.9
-      objectReference: {fileID: 0}
     - target: {fileID: 5528209405488142815, guid: 9d4c7a6f08c1e7e46a6af64468392aa9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.31
+      value: 8.63
       objectReference: {fileID: 0}
     - target: {fileID: 5528209405488142815, guid: 9d4c7a6f08c1e7e46a6af64468392aa9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.24
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 5528209405488142815, guid: 9d4c7a6f08c1e7e46a6af64468392aa9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1228,10 +1220,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5528209405488142815, guid: 9d4c7a6f08c1e7e46a6af64468392aa9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8261036910262169639, guid: 9d4c7a6f08c1e7e46a6af64468392aa9, type: 3}
-      propertyPath: isStopTile
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3572,11 +3560,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3156415986229627627, guid: 233b28fe99765e9478096647bce39f1b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 3156415986229627627, guid: 233b28fe99765e9478096647bce39f1b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.47
+      value: 5.21
       objectReference: {fileID: 0}
     - target: {fileID: 3156415986229627627, guid: 233b28fe99765e9478096647bce39f1b, type: 3}
       propertyPath: m_LocalPosition.z

@@ -47,6 +47,7 @@ public class Controller_Level : MonoBehaviour
         _playerState = player.GetComponent<PlayerState>();
         _playerTravelTile = player.GetComponent<TravelTile>();
         _playerTravelTile.OnTravelTileStop += CheckEnemiesLeft;
+        _playerState.OnPlayerDeath += GameOver;
 
         Resume();
         ShowKey(false);
@@ -69,20 +70,17 @@ public class Controller_Level : MonoBehaviour
                 ShowKey(true);
             }
 
-            DialogueData dialogueData = levelData.GetDialogueByCount(_enemiesCount);
+            DialogueData dialogueData = levelData.GetDialogueByCount(_enemiesCount, out float delayTime);
             if (dialogueData != null)
             {
-                StartCoroutine(PlayDialogueWithDelay(dialogueData, 1.5f));
+                StartCoroutine(PlayDialogueWithDelay(dialogueData, delayTime));
             }
         }
     }
     
     private IEnumerator PlayDialogueWithDelay(DialogueData data, float delayTime)
     {
-        // Chờ... (lúc này animation quái chết/nổ đang diễn ra)
         yield return new WaitForSeconds(delayTime);
-
-        // Hết giờ chờ, bắt đầu hội thoại
         Controller_Dialogue.Instance.StartDialogue(data);
     }
 
@@ -140,5 +138,11 @@ public class Controller_Level : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(1);
         Controller_Scene.Instance.LoadScene("Win");
+    }
+
+    private void GameOver()
+    {
+        Debug.Log("Game over");
+        Controller_Scene.Instance.LoadScene("Lose");
     }
 }

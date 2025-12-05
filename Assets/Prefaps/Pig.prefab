@@ -79,7 +79,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -557059849
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -4482629034155238029, guid: 739649ef7cde7f0499578dbdd8bf9356, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -222,3 +222,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _travelTile: {fileID: 4966852722566272984}
   _killEffect: {fileID: 1528192506487397297, guid: 1dbf53a8a5f452e4aa773a4e384a8c31, type: 3}
+  _jumpForce: 8
+  _throwForce: 3
+  _destroyDelay: 2
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  tileLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  onRight: 0
+  onLeft: 0
+  onUp: 0
+  onDown: 0

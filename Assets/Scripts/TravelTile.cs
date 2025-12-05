@@ -23,7 +23,7 @@ public class TravelTile : Tile
 
     public delegate void MoveDelegate(DIR dir);
     public event StateDelegate OnTravelTileStop;
-    //public event MoveDelegate OnTravelTileMove;
+    public event MoveDelegate OnTravelTileMove;
     public Func<Tile.DIR, Node> OnCalculateTargetNode;
 
     void Awake() // Dùng Awake an toàn hơn Start
@@ -122,6 +122,7 @@ public class TravelTile : Tile
             SetDestination(dirVec);
             IsMoving = true;
             MoveDir = dir;
+            OnTravelTileMove?.Invoke(dir);
             return true;
         }
     }
@@ -138,8 +139,8 @@ public class TravelTile : Tile
             else
                 MoveDir = (currNode.x > target.x) ? DIR.LEFT : DIR.RIGHT;
             IsMoving = true;
+            OnTravelTileMove?.Invoke(MoveDir);
             return true;
-            //OnTravelTileMove?.Invoke(MoveDir);
         }
 
         return false;

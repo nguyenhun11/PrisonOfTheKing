@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
         get { return _travelTile.IsMoving; }
     }
 
+    public bool canMove = true;
+
     private Tile.DIR _bufferDirWhenMoving = Tile.DIR.NONE;
     public delegate void MoveAction(Tile.DIR direction);
 
@@ -36,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         // Lấy Input từ hàm mới đã hỗ trợ cả Swipe và Keyboard
         Tile.DIR inputThisFrame = GetDirInput(); 
 
-        if (IsMoving)
+        if (!canMove || IsMoving)
         {
             if (_bufferDirWhenMoving == Tile.DIR.NONE)
             {
@@ -57,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void MoveCharacter(Tile.DIR direction)
+    public void MoveCharacter(Tile.DIR direction)
     {
         _travelTile.Move(direction);
         OnPlayerMoved?.Invoke(direction);
@@ -122,10 +124,10 @@ public class PlayerMovement : MonoBehaviour
 
     private Tile.DIR GetKeyboardInput()
     {
-        if (Input.GetAxis("Vertical") > 0) return Tile.DIR.UP;
-        if (Input.GetAxis("Vertical") < 0) return Tile.DIR.DOWN;
-        if (Input.GetAxis("Horizontal") < 0) return Tile.DIR.LEFT;
-        if (Input.GetAxis("Horizontal") > 0) return Tile.DIR.RIGHT;
+        if (Input.GetKey(KeyCode.W)) return Tile.DIR.UP;
+        if (Input.GetKey(KeyCode.S)) return Tile.DIR.DOWN;
+        if (Input.GetKey(KeyCode.A)) return Tile.DIR.LEFT;
+        if (Input.GetKey(KeyCode.D)) return Tile.DIR.RIGHT;
         return Tile.DIR.NONE;
     }
 }

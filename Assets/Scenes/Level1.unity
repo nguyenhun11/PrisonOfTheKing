@@ -6619,6 +6619,14 @@ PrefabInstance:
       propertyPath: levelData
       value: 
       objectReference: {fileID: 11400000, guid: 8162b7a04e45a5049801bb2b899153ab, type: 2}
+    - target: {fileID: 5133080877425366188, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4236677631525818213, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
+    - target: {fileID: 5133080877425366188, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6436823060585703505, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

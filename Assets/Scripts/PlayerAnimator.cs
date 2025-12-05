@@ -26,15 +26,13 @@ public class PlayerAnimator : MonoBehaviour
     public bool onLeft;
     public bool onUp;
     public bool onDown;
-
-    
-    
     
     private void OnEnable()
     {
         if (_playerMovement != null)
         {
             _playerMovement.OnPlayerMoved += StartMoving;
+            
         }
     }
 
@@ -84,5 +82,16 @@ public class PlayerAnimator : MonoBehaviour
     public void JumpIn()
     {
         _animator.SetTrigger("JumpIn");
+    }
+
+    public void Fall()
+    {
+        _animator.SetTrigger("Fall");
+        _animator.SetFloat(MoveStateParam, 0);
+    }
+
+    public void Die()
+    {
+        _animator.SetTrigger("Die");
     }
 }

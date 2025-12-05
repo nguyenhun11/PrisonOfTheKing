@@ -50,6 +50,7 @@ public class Controller_Sound : MonoBehaviour
             {
                 _randomPitchAudioSource.pitch = Random.Range(0.5f, 1.5f);
                 _randomPitchAudioSource.PlayOneShot(clip);
+                _randomPitchAudioSource.pitch = 1;
             }
             else
             {

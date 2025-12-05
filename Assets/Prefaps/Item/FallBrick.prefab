@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3179015416508895249}
   - component: {fileID: 5059193563992870228}
   - component: {fileID: 176357574556832832}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: FallBrick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 1696861
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -284870428, guid: 38f93830c50171f47bb3b8cc09342b84, type: 3}
+  m_Sprite: {fileID: -5966621866309598838, guid: 33cb80b236eb08343ae1df35a9ea0474, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b2b085be40f9343b099a3a7bc53c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStopTile: 1
+  isStopTile: 0
 --- !u!61 &3179015416508895249
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -141,8 +141,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.53333336}
-    oldSize: {x: 1, y: 0.9375}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 0.9375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
