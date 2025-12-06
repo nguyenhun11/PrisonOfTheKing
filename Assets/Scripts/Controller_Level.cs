@@ -34,10 +34,10 @@ public class Controller_Level : MonoBehaviour
     [Header("Game Logical")]
     public Key key;
     public Door door;
+    public NPC npc;
     
     [Header("Dialogue Data")]
     public LevelData levelData;
-    //public DialogueData startLevelDialogue;
 
     void Start()
     {
@@ -55,6 +55,9 @@ public class Controller_Level : MonoBehaviour
         Controller_Dialogue.Instance.EndDialogue();
 
         Invoke(nameof(CheckEnemiesLeft), 1f);
+        //levelData = Controller_LoadLevel.Instance.currentLevel; //Không xóa dòng này, bỏ comment lúc build game
+        
+        npc?.gameObject.SetActive(levelData.showNPC);
     }
 
     private void CheckEnemiesLeft()
@@ -130,6 +133,7 @@ public class Controller_Level : MonoBehaviour
     private void GameWin()
     {
         levelData.FinishLevel();
+        levelData.showNPC = false;
         StartCoroutine(WaitGameWin());
     }
     

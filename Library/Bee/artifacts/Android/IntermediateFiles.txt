@@ -1,0 +1,6 @@
+build.gradle.xml
+unityLibrary/build.gradle.xml
+launcher/build.gradle.xml
+local.properties.xml
+gradle.properties.xml
+settings.gradle.xml

@@ -4,9 +4,12 @@
 			<method name="Pause"/>
 			<method name="Pause"/>
 			<method name="Pause"/>
+			<method name="Pause"/>
 			<method name="RePlay"/>
 			<method name="RePlay"/>
 			<method name="RePlay"/>
+			<method name="RePlay"/>
+			<method name="Resume"/>
 			<method name="Resume"/>
 			<method name="Resume"/>
 			<method name="Resume"/>
@@ -18,12 +21,10 @@
 			<method name="LoadScene"/>
 			<method name="LoadScene"/>
 			<method name="LoadScene"/>
+			<method name="LoadScene"/>
+			<method name="LoadScene"/>
 		</type>
 		<type fullname="UI_Level">
-			<method name="LoadLevel"/>
-			<method name="LoadLevel"/>
-			<method name="LoadLevel"/>
-			<method name="LoadLevel"/>
 			<method name="LoadLevel"/>
 			<method name="LoadLevel"/>
 		</type>

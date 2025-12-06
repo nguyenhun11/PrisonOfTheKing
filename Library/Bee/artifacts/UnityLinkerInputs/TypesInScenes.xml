@@ -1,20 +1,26 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="Brick_Fall" preserve="nothing"/>
 		<type fullname="Brick_OneWay" preserve="nothing"/>
 		<type fullname="Controller_Dialogue" preserve="nothing"/>
 		<type fullname="Controller_Level" preserve="nothing"/>
 		<type fullname="Controller_LoadLevel" preserve="nothing"/>
 		<type fullname="Controller_Pause" preserve="nothing"/>
 		<type fullname="Controller_Scene" preserve="nothing"/>
+		<type fullname="Controller_Sound" preserve="nothing"/>
 		<type fullname="Controller_UI" preserve="nothing"/>
 		<type fullname="DialogueData" preserve="nothing"/>
 		<type fullname="Door" preserve="nothing"/>
+		<type fullname="Effect" preserve="nothing"/>
 		<type fullname="Enemy" preserve="nothing"/>
+		<type fullname="Item_Bomb" preserve="nothing"/>
 		<type fullname="Key" preserve="nothing"/>
 		<type fullname="LevelData" preserve="nothing"/>
 		<type fullname="PlayerAnimator" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
 		<type fullname="PlayerState" preserve="nothing"/>
+		<type fullname="Road_Full" preserve="nothing"/>
+		<type fullname="SoundEffectLibrary" preserve="nothing"/>
 		<type fullname="Tile" preserve="nothing"/>
 		<type fullname="TravelTile" preserve="nothing"/>
 		<type fullname="UI_Level" preserve="nothing"/>
@@ -119,8 +125,11 @@
 		<type fullname="UnityEditor.VFXManager" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Animator" preserve="nothing"/>
+		<type fullname="UnityEngine.Audio.AudioResource" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioClip" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>

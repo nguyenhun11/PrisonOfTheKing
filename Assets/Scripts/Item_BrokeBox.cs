@@ -35,4 +35,12 @@ public class Item_BrokeBox : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out PlayerAnimator player))
+        {
+            player.StandOnGround();
+        }
+    }
 }

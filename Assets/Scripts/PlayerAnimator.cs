@@ -10,6 +10,7 @@ public class PlayerAnimator : MonoBehaviour
     
     [Header("Settings")]
     public LayerMask wallLayer;
+    public LayerMask tileLayer;
     
     // Animator Parameters ID
     private static readonly int IsMovingParam = Animator.StringToHash("IsMoving");
@@ -49,6 +50,14 @@ public class PlayerAnimator : MonoBehaviour
     {
         HandleOnState();
         _animator.SetBool(IsMovingParam, _isMoving);
+        if (onDown && onUp)
+        {
+            _animator.SetBool("Clamp", true);
+        }
+        else
+        {
+            _animator.SetBool("Clamp", false);
+        }
     }
 
     private void StartMoving(Tile.DIR direction) //Khi nhân vật bắt đầu di chuyển
@@ -73,10 +82,12 @@ public class PlayerAnimator : MonoBehaviour
 
     private void HandleOnState()
     {
-        onUp = Physics2D.Raycast(transform.position, Vector2.up, 0.6f, wallLayer);
-        onDown = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, wallLayer);
-        onLeft = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, wallLayer);
-        onRight =  Physics2D.Raycast(transform.position, Vector2.right, 0.6f, wallLayer);
+        LayerMask targetLayer = wallLayer | tileLayer;
+        
+        onUp = Physics2D.Raycast(transform.position, Vector2.up, 0.6f, targetLayer);
+        onDown = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, targetLayer);
+        onLeft = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, targetLayer);
+        onRight =  Physics2D.Raycast(transform.position, Vector2.right, 0.6f, targetLayer);
     }
 
     public void JumpIn()
@@ -93,5 +104,10 @@ public class PlayerAnimator : MonoBehaviour
     public void Die()
     {
         _animator.SetTrigger("Die");
+    }
+
+    public void StandOnGround()
+    {
+        _animator.SetFloat(MoveStateParam, 0);
     }
 }

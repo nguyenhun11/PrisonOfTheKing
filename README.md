@@ -1,4 +1,4 @@
-# Giới thiệu game Vượt ngục 👮‍♂️🥷🏃‍♂️‍➡️
+# Prison of the King 🫅
 ## Cảm hứng
 - Game được lấy cảm hứng từ Green Ninja, đồ án cuối kỳ CLB GamApp Studios chưa nộp đúng hạn
 - Cách di chuyển tương tự Tom of the Masks, người chơi sẽ di chuyển thẳng cho đến khi đụng tường
@@ -6,7 +6,8 @@
 ## Cốt truyện phụ
 ## Logic trò chơi
 ## Task cần làm
-- Mượt animation
-- Start scene và menu scene, chuyển cảnh
-- Win, Lose
-- Sound, Effect
+- SFX
+- Build đến 10 level
+- Lên cốt truyện, NPC phụ
+- Song ngữ
+- Các tính năng cài đặt

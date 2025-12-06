@@ -12,6 +12,11 @@ public class LevelData : ScriptableObject
     public string levelName;
     public List<LevelData> nextLevels;
 
+    [Header("NPC Data")] 
+    public DialogueData npcDialogue;
+    public bool showNPC = false;
+    public bool showNPCDialogue = false;
+
     public void FinishLevel(bool finish = true)
     {
         isFinish = finish;

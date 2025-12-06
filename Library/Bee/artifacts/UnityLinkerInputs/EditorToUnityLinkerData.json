@@ -4,6 +4,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Brick_Fall",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Brick_OneWay",
             "moduleName": "",
             "usedInScenes": []
@@ -53,6 +60,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Controller_Sound",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Controller_UI",
             "moduleName": "",
             "usedInScenes": []
@@ -87,9 +101,18 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Effect",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
@@ -107,7 +130,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -116,6 +141,13 @@
             "nativeClass": "GlobalGameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Item_Bomb",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -141,7 +173,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -161,7 +195,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -181,7 +217,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -221,6 +259,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Road_Full",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "RuntimeInitializeOnLoadManager",
             "fullManagedTypeName": "",
@@ -232,6 +277,13 @@
             "nativeClass": "ShaderNameRegistry",
             "fullManagedTypeName": "",
             "moduleName": "Core",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "SoundEffectLibrary",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -333,7 +385,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -366,7 +419,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -413,7 +468,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -424,7 +480,38 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioResource",
+            "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/Level1.unity",
+                "Assets/Scenes/Level2.unity",
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
+                "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
+                "Assets/Scenes/Win.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SampleClip",
+            "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/Level1.unity",
+                "Assets/Scenes/Level2.unity",
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
+                "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
+                "Assets/Scenes/Win.unity"
             ]
         },
         {
@@ -436,7 +523,24 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
+                "Assets/Scenes/Win.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioClip",
+            "fullManagedTypeName": "UnityEngine.AudioClip",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/Level1.unity",
+                "Assets/Scenes/Level2.unity",
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
+                "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -449,7 +553,24 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
+                "Assets/Scenes/Win.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioSource",
+            "fullManagedTypeName": "UnityEngine.AudioSource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/Level1.unity",
+                "Assets/Scenes/Level2.unity",
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
+                "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -462,7 +583,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -474,7 +597,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -486,7 +610,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -499,7 +625,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -512,7 +640,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -524,7 +654,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -536,7 +667,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -548,7 +681,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -567,7 +701,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -594,6 +730,7 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity"
             ]
         },
@@ -606,7 +743,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -618,7 +757,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -629,7 +769,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -683,7 +824,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -696,6 +839,7 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity"
             ]
         },
@@ -708,7 +852,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -720,7 +866,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -732,7 +879,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -752,7 +901,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -764,7 +915,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -1182,7 +1334,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1194,7 +1348,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -1205,7 +1360,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -1217,6 +1373,7 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity"
             ]
         },
@@ -1229,7 +1386,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1241,7 +1400,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -1253,7 +1413,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1266,7 +1428,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1279,7 +1443,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1298,7 +1464,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -1309,7 +1476,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -1320,7 +1488,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         },
         {
@@ -1332,7 +1501,9 @@
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/LevelSelect.unity",
+                "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1463,7 +1634,8 @@
             "usedInScenes": [
                 "Assets/Scenes/Level1.unity",
                 "Assets/Scenes/Level2.unity",
-                "Assets/Scenes/Level3.unity"
+                "Assets/Scenes/Level3.unity",
+                "Assets/Scenes/Level4.unity"
             ]
         }
     ],
@@ -4136,6 +4308,9 @@
     "forceIncludeModules": [],
     "forceExcludeModules": [
         "AMD",
-        "NVIDIA"
+        "ClusterInput",
+        "ClusterRenderer",
+        "NVIDIA",
+        "VirtualTexturing"
     ]
 }

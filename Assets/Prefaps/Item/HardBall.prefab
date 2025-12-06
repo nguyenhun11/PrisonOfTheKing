@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 912276813316701382}
   - component: {fileID: 5979411303070858523}
   - component: {fileID: 7569848145592726633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HardBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -557059849
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1219582254, guid: ef650116516aaff4fba64c4a453a2129, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

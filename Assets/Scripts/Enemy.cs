@@ -1,5 +1,3 @@
-using System;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 // Đảm bảo có Rigidbody2D để xử lý vật lý rơi
@@ -33,6 +31,7 @@ public class Enemy : MonoBehaviour
     
     private void Awake()
     {
+        _travelTile = GetComponent<TravelTile>();
         _rb = GetComponent<Rigidbody2D>();
         _col = GetComponent<Collider2D>();
         _animator = GetComponent<Animator>();

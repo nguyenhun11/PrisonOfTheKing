@@ -464,6 +464,7 @@
 "Assets/Scripts/Item_Spring.cs"
 "Assets/Scripts/Key.cs"
 "Assets/Scripts/Node.cs"
+"Assets/Scripts/NPC.cs"
 "Assets/Scripts/PlayerAnimator.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerState.cs"

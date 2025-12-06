@@ -1,0 +1,12 @@
+# ninja log v5
+116	2589	7867030296067738	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	7aa7ea3ba5db43ac
+2593	3213	7867030302387450	D:/3.CreateGame/SpiritEscape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4t4z5i5g/obj/arm64-v8a/libswappywrapper.so	1ed97f4f96dff1c2
+65	20902	7867030479309383	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9414ef9f056af5d
+37	20944	7867030479756955	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	9d2f3ef480249255
+15	20978	7867030480060268	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	ecfd5f71dd20fcf9
+95	20985	7867030480136541	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	f16690c31b85a53f
+26	21031	7867030480644977	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	2a4c826de71bef11
+79	21067	7867030480917470	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	87b7981b25d99066
+51	21314	7867030483417759	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	571b8c3f16a6da1e
+1	21439	7867030484519008	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	7edab4209b0e4fde
+21439	21642	7867030486741369	D:/3.CreateGame/SpiritEscape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4t4z5i5g/obj/arm64-v8a/libgame.so	6151fd562a321bc9

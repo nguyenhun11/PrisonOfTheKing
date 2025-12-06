@@ -81,7 +81,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1683881519
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4236677631525818213, guid: e5caba026f7a32342a2300ea74a32787, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -158,8 +158,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.41025642, y: 0.37931034}
-    oldSize: {x: 4.875, y: 3.625}
+    pivot: {x: 0.52380955, y: 0.30769232}
+    oldSize: {x: 1.3125, y: 1.625}
     newSize: {x: 2.4375, y: 1.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minSwipeDistance: 20
+  canMove: 1
 --- !u!114 &4364429627743749055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +242,9 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
+  tileLayer:
+    serializedVersion: 2
+    m_Bits: 256
   onRight: 0
   onLeft: 0
   onUp: 0
@@ -257,6 +261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb12c8bd6c6870428a2df8fe3388aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _jumpForce: 8
+  _throwForce: 3
+  _destroyDelay: 2
   StandOnDown: 0
   StandOnLeft: 0
   StandOnRight: 0
