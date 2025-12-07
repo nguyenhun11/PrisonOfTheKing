@@ -20,6 +20,8 @@ public class LevelData : ScriptableObject
     public void FinishLevel(bool finish = true)
     {
         isFinish = finish;
+        showNPC =  !finish;
+        showNPCDialogue = !finish;
         foreach (LevelData nextLevel in nextLevels)
         {
             nextLevel.isLocked = false;
@@ -58,5 +60,25 @@ public class LevelData : ScriptableObject
         }
         delayTime = 0f;
         return null;
+    }
+
+    public void ResetLevel(bool locked = true)
+    {
+        FinishLevel(false);
+        isLocked = locked;
+        foreach (EnemyCountTrigger enemyCountTrigger in enemyDialogues)
+        {
+            enemyCountTrigger.isOpened = false;
+        }
+    }
+
+    public void UnlockLevel(bool finish = true)
+    {
+        isLocked = false;
+        FinishLevel(finish);
+        foreach (EnemyCountTrigger enemyCountTrigger in enemyDialogues)
+        {
+            enemyCountTrigger.isOpened = true;
+        }
     }
 }

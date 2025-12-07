@@ -206,7 +206,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   DebugIsMoving: 0
-  moveSpeed: 7
+  moveSpeed: 10
   canMoveByOthers: 0
   sameSpeedWithOther: 0
   stopOther: 0

@@ -193,6 +193,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87788629a7366864aa72b5c3efd5a816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _canBreak: 0
+  breakBySide: 0
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  tileLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  onRight: 0
+  onLeft: 0
+  onUp: 0
+  onDown: 0
 --- !u!50 &513436303715586058
 Rigidbody2D:
   serializedVersion: 5

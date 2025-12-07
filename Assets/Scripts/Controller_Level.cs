@@ -55,7 +55,7 @@ public class Controller_Level : MonoBehaviour
         Controller_Dialogue.Instance.EndDialogue();
 
         Invoke(nameof(CheckEnemiesLeft), 1f);
-        //levelData = Controller_LoadLevel.Instance.currentLevel; //Không xóa dòng này, bỏ comment lúc build game
+        levelData = Controller_LoadLevel.Instance.currentLevel; //Không xóa dòng này, bỏ comment lúc build game
         
         npc?.gameObject.SetActive(levelData.showNPC);
     }
@@ -106,6 +106,16 @@ public class Controller_Level : MonoBehaviour
         Controller_UI.Instance.ShowSettingPanel(false);
     }
 
+    public void ReturnToMenu()
+    {
+        if (Controller_LoadLevel.Instance != null)
+        {
+            Controller_LoadLevel.Instance.SaveProgress();
+        }
+        Controller_Pause.SetPause(false);
+        Controller_Scene.Instance.LoadScene("LevelSelect");
+    }
+
     private void ShowKey(bool on)
     {
         if (key != null)
@@ -134,6 +144,7 @@ public class Controller_Level : MonoBehaviour
     {
         levelData.FinishLevel();
         levelData.showNPC = false;
+        Controller_LoadLevel.Instance.CompleteCurrentLevel();
         StartCoroutine(WaitGameWin());
     }
     

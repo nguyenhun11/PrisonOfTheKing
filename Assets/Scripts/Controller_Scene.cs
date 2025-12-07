@@ -1,17 +1,15 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using UnityEngine.Video;
 
 public class Controller_Scene : MonoBehaviour
 {
     public static Controller_Scene Instance;
 
-    // [Header("Settings")]
-    // [SerializeField] private RawImage rawImageScreen;
-    // [SerializeField] private VideoPlayer videoPlayer;
-    // [SerializeField] private CanvasGroup canvasGroup; // Vẫn cần để ẩn hiện cái RawImage
+    [Header("Transition")]
+    public Canvas transitionCanvas;
+    public float transitionDuration = 1f;
+    private Animator _transitionAnimator;
 
     private void Awake()
     {
@@ -26,65 +24,43 @@ public class Controller_Scene : MonoBehaviour
             return;
         }
 
-        // // Tắt màn hình video đi
-        // canvasGroup.alpha = 0;
-        // canvasGroup.blocksRaycasts = false;
-        // rawImageScreen.gameObject.SetActive(false);
-        //
-        // // Đăng ký sự kiện để biết khi nào video đã chuẩn bị xong (để tránh bị giật lúc đầu)
-        // videoPlayer.prepareCompleted += (source) => { source.Play(); };
+        if (transitionCanvas != null)
+            _transitionAnimator = transitionCanvas.GetComponent<Animator>();
     }
 
-    // public void LoadSceneWithVideo(string sceneName)
-    // {
-    //     StartCoroutine(VideoTransitionSequence(sceneName));
-    // }
+    // Đăng ký sự kiện: Cứ hễ load xong scene là chạy hàm OnSceneLoaded
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
-    // private IEnumerator VideoTransitionSequence(string sceneName)
-    // {
-    //     // B1: Bật màn hình chứa video lên
-    //     rawImageScreen.gameObject.SetActive(true);
-    //     canvasGroup.blocksRaycasts = true;
-    //     canvasGroup.alpha = 1; // Hiện lên ngay
-    //     
-    //     videoPlayer.Prepare();
-    //     
-    //     while (!videoPlayer.isPlaying)
-    //     {
-    //         yield return null; 
-    //     }
-    //     
-    //     float waitTime = (float)videoPlayer.length / 2f;
-    //     yield return new WaitForSeconds(waitTime);
-    //     
-    //     AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
-    //     
-    //     operation.allowSceneActivation = false;
-    //
-    //     // Chờ load xong 90%
-    //     while (operation.progress < 0.9f)
-    //     {
-    //         yield return null;
-    //     }
-    //
-    //     // Cho phép nhảy scene
-    //     operation.allowSceneActivation = true;
-    //
-    //     // B5: Chờ nốt phần còn lại của video (hoặc chờ đến khi hết video)
-    //     while (videoPlayer.isPlaying)
-    //     {
-    //         yield return null;
-    //     }
-    //
-    //     // B6: Tắt UI
-    //     canvasGroup.alpha = 0;
-    //     canvasGroup.blocksRaycasts = false;
-    //     rawImageScreen.gameObject.SetActive(false);
-    // }
-    
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    // Hàm này TỰ ĐỘNG CHẠY mỗi khi vào Scene mới
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Vừa vào Scene mới -> Màn hình đang đen -> Play Fade In để sáng dần
+        _transitionAnimator.Play("StartScene"); 
+        // Lưu ý: Trong animation FadeIn, frame cuối cùng bạn nhớ event tắt Canvas hoặc tắt Raycast
+    }
+
+    // Hàm này gọi khi bạn muốn chuyển scene (VD: chạm vào cửa)
     public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        StartCoroutine(Transition(sceneName));
     }
 
+    private IEnumerator Transition(string sceneName)
+    {
+        transitionCanvas.gameObject.SetActive(true);
+        
+        _transitionAnimator.Play("OutScene");
+        
+        yield return new WaitForSecondsRealtime(transitionDuration);
+
+        SceneManager.LoadScene(sceneName);
+    }
 }

@@ -13,7 +13,11 @@ public class DialogueData : ScriptableObject
     public struct DialogueLine
     {
         public Sprite image;
-        [TextArea(3, 5)] public string text;
+        
+        [Header("Nội dung song ngữ")]
+        [TextArea(3, 5)] public string textVI; // Tiếng Việt
+        [TextArea(3, 5)] public string textEN; // Tiếng Anh
+        
         public bool auto;
     }
 }

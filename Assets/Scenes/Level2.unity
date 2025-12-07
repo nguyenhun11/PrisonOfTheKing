@@ -7426,6 +7426,7 @@ GameObject:
   - component: {fileID: 1565971772}
   - component: {fileID: 1565971771}
   - component: {fileID: 1565971770}
+  - component: {fileID: 1565971773}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7507,6 +7508,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565971773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565971769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1626786046
 GameObject:
   m_ObjectHideFlags: 0
@@ -7891,17 +7936,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3156415986229627627, guid: 233b28fe99765e9478096647bce39f1b, type: 3}
   m_PrefabInstance: {fileID: 536225485}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2137369248 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6926606783201726216, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
-  m_PrefabInstance: {fileID: 1627708571}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d729a655e741d141b107f3ba533d8fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5191105551906255080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7967,10 +8001,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2162081740402441154, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2137369248}
     - target: {fileID: 4146724274830404289, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
       propertyPath: key
       value: 
@@ -8031,10 +8061,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelController
       objectReference: {fileID: 0}
-    - target: {fileID: 8747906770551470674, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2137369248}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
