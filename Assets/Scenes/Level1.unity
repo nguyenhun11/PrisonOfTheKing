@@ -236,6 +236,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6719656903194565726, guid: f6bdc6d3db0c18648af03b081c3f31f0, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 4.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719656903194565726, guid: f6bdc6d3db0c18648af03b081c3f31f0, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 3.625
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6628,6 +6636,10 @@ PrefabInstance:
       propertyPath: enemies
       value: 
       objectReference: {fileID: 1626786046}
+    - target: {fileID: 4146724274830404289, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
+      propertyPath: levelData
+      value: 
+      objectReference: {fileID: 11400000, guid: 8162b7a04e45a5049801bb2b899153ab, type: 2}
     - target: {fileID: 4284188085695286335, guid: 4a2be9ae137202b42adfe11482b63728, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.NguyenHun.PrisonOfTheKing.launcher-mergeReleaseResources-19:/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "D:\\3.CreateGame\\PrisonOfTheKing\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\packageReleaseResources\\values-v31\\values-v31.xml",
+                    "from": {
+                        "startLines": "2,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,542",
+                        "endLines": "7,13",
+                        "endColumns": "10,10",
+                        "endOffsets": "537,1026"
+                    }
+                }
+            ]
+        }
+    ]
+}

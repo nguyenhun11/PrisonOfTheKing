@@ -1,0 +1,12 @@
+# ninja log v5
+193	1555	7868304669450145	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	1475794161acdeb8
+1557	2169	7868304675270762	D:/3.CreateGame/PrisonOfTheKing/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2422481g/obj/arm64-v8a/libswappywrapper.so	7014a6eca5216cb
+87	4931	7868304703375595	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	50f7c494f70ed9ac
+106	4968	7868304703786168	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2e4e18ea392f25d1
+10	5000	7868304704115950	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	1932625ae87d79ed
+150	5015	7868304704265626	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	4770e40ded0c40fb
+47	5119	7868304705368653	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	d323027d6491fc68
+175	5129	7868304705422953	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	c631849ff664e2de
+132	5429	7868304708240840	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	6b3f93a5d62cb8b0
+71	5560	7868304709661542	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	304e73ebd89899b8
+5561	5791	7868304712047034	D:/3.CreateGame/PrisonOfTheKing/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2422481g/obj/arm64-v8a/libgame.so	520456209a72ecc6

@@ -5,6 +5,12 @@
 			<method name="Pause"/>
 			<method name="Pause"/>
 			<method name="Pause"/>
+			<method name="Pause"/>
+			<method name="Pause"/>
+			<method name="Pause"/>
+			<method name="RePlay"/>
+			<method name="RePlay"/>
+			<method name="RePlay"/>
 			<method name="RePlay"/>
 			<method name="RePlay"/>
 			<method name="RePlay"/>
@@ -13,20 +19,40 @@
 			<method name="Resume"/>
 			<method name="Resume"/>
 			<method name="Resume"/>
-		</type>
-		<type fullname="Controller_Scene">
-			<method name="LoadScene"/>
-			<method name="LoadScene"/>
-			<method name="LoadScene"/>
-			<method name="LoadScene"/>
-			<method name="LoadScene"/>
-			<method name="LoadScene"/>
-			<method name="LoadScene"/>
-			<method name="LoadScene"/>
+			<method name="Resume"/>
+			<method name="Resume"/>
+			<method name="Resume"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
 		</type>
 		<type fullname="UI_Level">
 			<method name="LoadLevel"/>
 			<method name="LoadLevel"/>
+			<method name="LoadLevel"/>
+			<method name="LoadLevel"/>
+			<method name="LoadLevel"/>
+			<method name="LoadLevel"/>
+			<method name="LoadLevel"/>
+			<method name="LoadLevel"/>
+			<method name="LoadLevel"/>
+		</type>
+		<type fullname="UI_LevelList">
+			<method name="LoadSettingScene"/>
+		</type>
+		<type fullname="UI_SettingsPanel">
+			<method name="BackToMenuScene"/>
 		</type>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">

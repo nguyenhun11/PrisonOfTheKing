@@ -1298,6 +1298,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_StringToHash_Injected();
 		Register_UnityEngine_Animator_StringToHash_Injected();
 
+		//System.Void UnityEngine.Animator::Play_Injected(System.IntPtr,System.Int32,System.Int32,System.Single)
+		void Register_UnityEngine_Animator_Play_Injected();
+		Register_UnityEngine_Animator_Play_Injected();
+
 		//System.Void UnityEngine.Animator::ResetTriggerString_Injected(System.IntPtr,UnityEngine.Bindings.ManagedSpanWrapper&)
 		void Register_UnityEngine_Animator_ResetTriggerString_Injected();
 		Register_UnityEngine_Animator_ResetTriggerString_Injected();
@@ -1305,6 +1309,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Animator::SetBoolID_Injected(System.IntPtr,System.Int32,System.Boolean)
 		void Register_UnityEngine_Animator_SetBoolID_Injected();
 		Register_UnityEngine_Animator_SetBoolID_Injected();
+
+		//System.Void UnityEngine.Animator::SetBoolString_Injected(System.IntPtr,UnityEngine.Bindings.ManagedSpanWrapper&,System.Boolean)
+		void Register_UnityEngine_Animator_SetBoolString_Injected();
+		Register_UnityEngine_Animator_SetBoolString_Injected();
 
 		//System.Void UnityEngine.Animator::SetFloatID_Injected(System.IntPtr,System.Int32,System.Single)
 		void Register_UnityEngine_Animator_SetFloatID_Injected();
@@ -1342,6 +1350,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_OpenURL_Injected();
 		Register_UnityEngine_Application_OpenURL_Injected();
 
+		//System.Void UnityEngine.Application::get_persistentDataPath_Injected(UnityEngine.Bindings.ManagedSpanWrapper&)
+		void Register_UnityEngine_Application_get_persistentDataPath_Injected();
+		Register_UnityEngine_Application_get_persistentDataPath_Injected();
+
 		//System.Void UnityEngine.Application::get_streamingAssetsPath_Injected(UnityEngine.Bindings.ManagedSpanWrapper&)
 		void Register_UnityEngine_Application_get_streamingAssetsPath_Injected();
 		Register_UnityEngine_Application_get_streamingAssetsPath_Injected();
@@ -1367,6 +1379,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_AsyncOperation_InternalSetManagedObject();
 
 	//End Registrations for type : UnityEngine.AsyncOperation
+
+	//Start Registrations for type : UnityEngine.AudioListener
+
+		//System.Void UnityEngine.AudioListener::set_volume(System.Single)
+		void Register_UnityEngine_AudioListener_set_volume();
+		Register_UnityEngine_AudioListener_set_volume();
+
+	//End Registrations for type : UnityEngine.AudioListener
 
 	//Start Registrations for type : UnityEngine.AudioSettings
 

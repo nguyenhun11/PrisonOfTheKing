@@ -6,10 +6,11 @@ public class TravelTile : Tile
     [Header("Moving settings")]
     private Node _targetNode;
     public LayerMask wallLayer;
+    public LayerMask tileLayer;
     public bool IsMoving { get; private set; }
     public bool DebugIsMoving;
     public float moveSpeed = 5f;
-    public Tile.DIR MoveDir { get; private set; }
+    public Tile.DIR MoveDir;
     
     [Header("Interaction Settings")]
     public bool canMoveByOthers = true;     
@@ -169,13 +170,10 @@ public class TravelTile : Tile
 
     public bool CheckOnGround()
     {
-        // 1. Xác định vị trí tâm của ô vuông bên dưới
+        LayerMask targetLayer = wallLayer | tileLayer;
         Vector2 checkPos = (Vector2)transform.position + Vector2.down;
-
-        // 2. Kiểm tra xem tại điểm đó có ai thuộc wallLayer đang đứng không
-        // Bán kính 0.2f là đủ nhỏ để nằm gọn trong ô, không liếm sang ô bên cạnh
-        bool hasGround = Physics2D.OverlapCircle(checkPos, 0.2f, wallLayer) != null;
-
+        
+        bool hasGround = Physics2D.OverlapCircle(checkPos, 0.2f, targetLayer) != null;
         return hasGround;
     }
 

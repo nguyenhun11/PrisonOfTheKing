@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xxhdpi_app_icon_round.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xxhdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xxxhdpi_app_icon_round.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xxxhdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xhdpi_app_icon_round.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xhdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-mdpi_app_icon.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-mdpi/app_icon.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xxxhdpi_app_icon.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xxxhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-ldpi_app_icon_round.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-ldpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-anydpi-v26/app_icon.xml"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-ldpi_ic_launcher_background.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-ldpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-ldpi_ic_launcher_foreground.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-ldpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-mdpi_app_icon_round.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-mdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-hdpi_app_icon_round.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-hdpi/app_icon_round.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-hdpi_app_icon.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-hdpi/app_icon.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-ldpi_app_icon.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-ldpi/app_icon.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xxhdpi_app_icon.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xxhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-xhdpi_app_icon.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-xhdpi/app_icon.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.NguyenHun.PrisonOfTheKing.launcher-release-21:/mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "com.NguyenHun.PrisonOfTheKing.launcher-main-22:/mipmap-anydpi-v26/app_icon_round.xml"
+    }
+]

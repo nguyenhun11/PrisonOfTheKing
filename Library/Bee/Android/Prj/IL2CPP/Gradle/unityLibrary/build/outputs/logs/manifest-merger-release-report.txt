@@ -1,0 +1,164 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:1-30:12
+	package
+		INJECTED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:70-116
+	xmlns:android
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-65
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:20-62
+uses-feature#0x00030000
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-52
+	android:glEsVersion
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:17-49
+uses-feature#android.hardware.vulkan.version
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-91
+	android:required
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:64-88
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:17-63
+uses-feature#android.hardware.touchscreen
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-88
+	android:required
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:61-85
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-99
+	android:required
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:72-96
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:3-108
+	android:required
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:81-105
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-80
+application
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-29:17
+	android:extractNativeLibs
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:60-92
+	android:enableOnBackInvokedCallback
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:16-59
+meta-data#unity.splash-mode
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:5-69
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:49-66
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:16-48
+meta-data#unity.splash-enable
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:5-74
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:51-71
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:16-50
+meta-data#unity.launch-fullscreen
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-78
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:55-75
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-54
+meta-data#unity.render-outside-safearea
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-84
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:61-81
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-60
+meta-data#notch.config
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-81
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:44-78
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-43
+meta-data#unity.auto-report-fully-drawn
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:61-81
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-60
+meta-data#unity.auto-set-game-state
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-80
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:57-77
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-56
+meta-data#unity.strip-engine-code
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-78
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:55-75
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-54
+activity#com.unity3d.player.UnityPlayerGameActivity
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-28:16
+	android:screenOrientation
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:404-440
+	android:enabled
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:197-219
+	android:launchMode
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:280-311
+	android:hardwareAccelerated
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:244-279
+	android:exported
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:220-243
+	android:resizeableActivity
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:370-403
+	android:configChanges
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:15-196
+	android:theme
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:441-490
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:312-369
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:7-22:23
+category#android.intent.category.LAUNCHER
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:9-69
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:19-66
+action#android.intent.action.MAIN
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:9-61
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:17-58
+meta-data#unityplayer.UnityActivity
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:7-82
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:59-79
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:18-58
+meta-data#android.app.lib_name
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:7-77
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:54-74
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:18-53
+meta-data#WindowManagerPreference:FreeformWindowSize
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:7-130
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:76-127
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:18-75
+meta-data#WindowManagerPreference:FreeformWindowOrientation
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:7-145
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:83-142
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:18-82
+meta-data#notch_support
+ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:7-70
+	android:value
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:47-67
+	android:name
+		ADDED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:18-46
+uses-sdk
+INJECTED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+INJECTED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml

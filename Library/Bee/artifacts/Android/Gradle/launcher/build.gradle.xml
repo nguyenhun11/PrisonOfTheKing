@@ -8,7 +8,7 @@
     <element name="" element-id="200" assign-type="None" raw-value="implementation project(':unityLibrary')" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
   </element>
   <element name="android" element-id="116" assign-type="None" type="Unity.Android.Gradle.Android" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="113">
-    <element name="namespace" element-id="117" assign-type="None" property-value="com.DefaultCompany.SpiritEscape" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
+    <element name="namespace" element-id="117" assign-type="None" property-value="com.NguyenHun.PrisonOfTheKing" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
     <element name="ndkPath" element-id="119" assign-type="None" property-value="C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
     <element name="ndkVersion" element-id="120" assign-type="None" property-value="27.2.12479018" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
     <element name="compileSdk" element-id="121" assign-type="None" property-value="35" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />
@@ -18,8 +18,8 @@
       <element name="targetCompatibility" element-id="126" assign-type="None" property-value="Version_17" type="Unity.Android.Gradle.PropertyEnum`1" base-type="BaseProperty" is-default="true" dependencies="" />
     </element>
     <element name="defaultConfig" element-id="127" assign-type="None" type="Unity.Android.Gradle.Flavor" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="">
-      <element name="applicationId" element-id="128" assign-type="None" property-value="com.DefaultCompany.SpiritEscape" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
-      <element name="versionName" element-id="133" assign-type="None" property-value="1.0" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
+      <element name="applicationId" element-id="128" assign-type="None" property-value="com.NguyenHun.PrisonOfTheKing" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
+      <element name="versionName" element-id="133" assign-type="None" property-value="1.1" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
       <element name="minSdk" element-id="135" assign-type="None" property-value="23" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />
       <element name="targetSdk" element-id="136" assign-type="None" property-value="35" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />
       <element name="versionCode" element-id="137" assign-type="None" property-value="1" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />

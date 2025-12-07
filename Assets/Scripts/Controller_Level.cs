@@ -55,7 +55,7 @@ public class Controller_Level : MonoBehaviour
         Controller_Dialogue.Instance.EndDialogue();
 
         Invoke(nameof(CheckEnemiesLeft), 1f);
-        levelData = Controller_LoadLevel.Instance.currentLevel; //Không xóa dòng này, bỏ comment lúc build game
+        //levelData = Controller_LoadLevel.Instance.currentLevel; //Không xóa dòng này, bỏ comment lúc build game
         
         npc?.gameObject.SetActive(levelData.showNPC);
     }

@@ -212,4 +212,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11be143ea3e1d2242acc584ab6c32cae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dirCanMove: 2
+  dirCanMove: 1

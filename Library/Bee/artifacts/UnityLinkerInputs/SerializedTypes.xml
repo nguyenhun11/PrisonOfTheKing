@@ -81,8 +81,15 @@
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.GlyphAnchorPoint" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.KerningTable" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.LigatureSubstitutionRecord" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.MarkPositionAdjustment" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.MarkToBaseAdjustmentRecord" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.TMP_Sprite" preserve="nothing" serialized="true"/>
@@ -119,6 +126,7 @@
 		<type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true"/>
 	</assembly>

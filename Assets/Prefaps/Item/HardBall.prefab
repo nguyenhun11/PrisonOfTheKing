@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 912276813316701382}
   - component: {fileID: 5979411303070858523}
   - component: {fileID: 7569848145592726633}
-  m_Layer: 8
+  - component: {fileID: 8040535748528936078}
+  m_Layer: 6
   m_Name: HardBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,8 +78,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -557059849
-  m_SortingLayer: 5
+  m_SortingLayerID: 1696861
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1219582254, guid: ef650116516aaff4fba64c4a453a2129, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3710197382064474947}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -135,7 +136,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.1}
   m_EdgeRadius: 0
 --- !u!50 &912276813316701382
 Rigidbody2D:
@@ -162,7 +163,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &5979411303070858523
 MonoBehaviour:
@@ -180,10 +181,14 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
+  tileLayer:
+    serializedVersion: 2
+    m_Bits: 256
   DebugIsMoving: 0
-  moveSpeed: 5
+  moveSpeed: 6
+  MoveDir: 0
   canMoveByOthers: 1
-  sameSpeedWithOther: 1
+  sameSpeedWithOther: 0
   stopOther: 1
 --- !u!114 &7569848145592726633
 MonoBehaviour:
@@ -192,7 +197,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3710197382064474947}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89bd814572ad6ca4cb8e8870b9bca302, type: 3}
   m_Name: 
@@ -202,3 +207,39 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   onGround: 0
+--- !u!58 &8040535748528936078
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3710197382064474947}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5

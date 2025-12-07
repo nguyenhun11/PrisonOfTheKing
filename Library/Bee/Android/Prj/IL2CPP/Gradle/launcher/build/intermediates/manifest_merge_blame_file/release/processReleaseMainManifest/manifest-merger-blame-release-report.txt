@@ -1,0 +1,216 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.NguyenHun.PrisonOfTheKing"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="1.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="23"
+10        android:targetSdkVersion="35" />
+11
+12    <supports-screens
+12-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-163
+13        android:anyDensity="true"
+13-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:135-160
+14        android:largeScreens="true"
+14-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:78-105
+15        android:normalScreens="true"
+15-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-77
+16        android:smallScreens="true"
+16-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:21-48
+17        android:xlargeScreens="true" />
+17-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:106-134
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:8:5-67
+19-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:8:22-64
+20
+21    <uses-feature android:glEsVersion="0x00030000" />
+21-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:10:5-54
+21-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:10:19-51
+22    <uses-feature
+22-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:11:5-13:36
+23        android:name="android.hardware.vulkan.version"
+23-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:12:9-55
+24        android:required="false" />
+24-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:13:9-33
+25    <uses-feature
+25-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:14:5-16:36
+26        android:name="android.hardware.touchscreen"
+26-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:15:9-52
+27        android:required="false" />
+27-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:16:9-33
+28    <uses-feature
+28-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:17:5-19:36
+29        android:name="android.hardware.touchscreen.multitouch"
+29-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:18:9-63
+30        android:required="false" />
+30-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:19:9-33
+31    <uses-feature
+31-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:20:5-22:36
+32        android:name="android.hardware.touchscreen.multitouch.distinct"
+32-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:21:9-72
+33        android:required="false" />
+33-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:22:9-33
+34
+35    <permission
+35-->[androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c919e84cf21a5073ea88f45ff1a29b85\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+36        android:name="com.NguyenHun.PrisonOfTheKing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+36-->[androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c919e84cf21a5073ea88f45ff1a29b85\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+37        android:protectionLevel="signature" />
+37-->[androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c919e84cf21a5073ea88f45ff1a29b85\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+38
+39    <uses-permission android:name="com.NguyenHun.PrisonOfTheKing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+39-->[androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c919e84cf21a5073ea88f45ff1a29b85\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+39-->[androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c919e84cf21a5073ea88f45ff1a29b85\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+40
+41    <application
+41-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-126
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.9.0] C:\Users\LENOVO\.gradle\caches\transforms-3\c919e84cf21a5073ea88f45ff1a29b85\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+43        android:enableOnBackInvokedCallback="false"
+43-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:25:9-52
+44        android:extractNativeLibs="true"
+45        android:icon="@mipmap/app_icon"
+45-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:16-47
+46        android:label="@string/app_name"
+46-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:48-80
+47        android:roundIcon="@mipmap/app_icon_round" >
+47-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:81-123
+48        <meta-data
+48-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:27:9-29:33
+49            android:name="unity.splash-mode"
+49-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:28:13-45
+50            android:value="0" />
+50-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:29:13-30
+51        <meta-data
+51-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:30:9-32:36
+52            android:name="unity.splash-enable"
+52-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:31:13-47
+53            android:value="True" />
+53-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:32:13-33
+54        <meta-data
+54-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:33:9-35:36
+55            android:name="unity.launch-fullscreen"
+55-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:34:13-51
+56            android:value="True" />
+56-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:35:13-33
+57        <meta-data
+57-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:36:9-38:36
+58            android:name="unity.render-outside-safearea"
+58-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:37:13-57
+59            android:value="True" />
+59-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:38:13-33
+60        <meta-data
+60-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:39:9-41:50
+61            android:name="notch.config"
+61-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:40:13-40
+62            android:value="portrait|landscape" />
+62-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:41:13-47
+63        <meta-data
+63-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:42:9-44:36
+64            android:name="unity.auto-report-fully-drawn"
+64-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:43:13-57
+65            android:value="true" />
+65-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:44:13-33
+66        <meta-data
+66-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:45:9-47:36
+67            android:name="unity.auto-set-game-state"
+67-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:46:13-53
+68            android:value="true" />
+68-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:47:13-33
+69        <meta-data
+69-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:48:9-50:36
+70            android:name="unity.strip-engine-code"
+70-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:49:13-51
+71            android:value="true" />
+71-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:50:13-33
+72
+73        <activity
+73-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:52:9-83:20
+74            android:name="com.unity3d.player.UnityPlayerGameActivity"
+74-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:53:13-70
+75            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+75-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:54:13-194
+76            android:enabled="true"
+76-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:55:13-35
+77            android:exported="true"
+77-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:56:13-36
+78            android:hardwareAccelerated="false"
+78-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:57:13-48
+79            android:launchMode="singleTask"
+79-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:58:13-44
+80            android:resizeableActivity="true"
+80-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:59:13-46
+81            android:screenOrientation="fullUser"
+81-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:60:13-49
+82            android:theme="@style/BaseUnityGameActivityTheme" >
+82-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:61:13-62
+83            <intent-filter>
+83-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:62:13-66:29
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:63:17-77
+84-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:63:27-74
+85
+86                <action android:name="android.intent.action.MAIN" />
+86-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:65:17-69
+86-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:65:25-66
+87            </intent-filter>
+88
+89            <meta-data
+89-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:68:13-70:40
+90                android:name="unityplayer.UnityActivity"
+90-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:69:17-57
+91                android:value="true" />
+91-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:70:17-37
+92            <meta-data
+92-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:71:13-73:40
+93                android:name="android.app.lib_name"
+93-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:72:17-52
+94                android:value="game" />
+94-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:73:17-37
+95            <meta-data
+95-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:74:13-76:71
+96                android:name="WindowManagerPreference:FreeformWindowSize"
+96-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:75:17-74
+97                android:value="@string/FreeformWindowSize_maximize" />
+97-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:76:17-68
+98            <meta-data
+98-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:77:13-79:79
+99                android:name="WindowManagerPreference:FreeformWindowOrientation"
+99-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:78:17-81
+100                android:value="@string/FreeformWindowOrientation_landscape" />
+100-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:79:17-76
+101            <meta-data
+101-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:80:13-82:40
+102                android:name="notch_support"
+102-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:81:17-45
+103                android:value="true" />
+103-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:82:17-37
+104        </activity>
+105
+106        <provider
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\e60bf0ab8a1217670124be7e52d524ab\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+107            android:name="androidx.startup.InitializationProvider"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\e60bf0ab8a1217670124be7e52d524ab\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+108            android:authorities="com.NguyenHun.PrisonOfTheKing.androidx-startup"
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\e60bf0ab8a1217670124be7e52d524ab\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+109            android:exported="false" >
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\e60bf0ab8a1217670124be7e52d524ab\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+110            <meta-data
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\e60bf0ab8a1217670124be7e52d524ab\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\e60bf0ab8a1217670124be7e52d524ab\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+112                android:value="androidx.startup" />
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\e60bf0ab8a1217670124be7e52d524ab\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+113            <meta-data
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ca632e50827689b4d45330738d8735e2\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ca632e50827689b4d45330738d8735e2\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+115                android:value="androidx.startup" />
+115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\ca632e50827689b4d45330738d8735e2\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+116        </provider>
+117    </application>
+118
+119</manifest>

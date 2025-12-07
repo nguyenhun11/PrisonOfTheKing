@@ -3,6 +3,7 @@
 		<type fullname="Brick_Fall" preserve="nothing"/>
 		<type fullname="Brick_OneWay" preserve="nothing"/>
 		<type fullname="Controller_Dialogue" preserve="nothing"/>
+		<type fullname="Controller_GeneralSetting" preserve="nothing"/>
 		<type fullname="Controller_Level" preserve="nothing"/>
 		<type fullname="Controller_LoadLevel" preserve="nothing"/>
 		<type fullname="Controller_Pause" preserve="nothing"/>
@@ -14,8 +15,11 @@
 		<type fullname="Effect" preserve="nothing"/>
 		<type fullname="Enemy" preserve="nothing"/>
 		<type fullname="Item_Bomb" preserve="nothing"/>
+		<type fullname="Item_BrokeBox" preserve="nothing"/>
+		<type fullname="Item_Fire" preserve="nothing"/>
 		<type fullname="Key" preserve="nothing"/>
 		<type fullname="LevelData" preserve="nothing"/>
+		<type fullname="NPC" preserve="nothing"/>
 		<type fullname="PlayerAnimator" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
 		<type fullname="PlayerState" preserve="nothing"/>
@@ -26,6 +30,7 @@
 		<type fullname="UI_Level" preserve="nothing"/>
 		<type fullname="UI_LevelList" preserve="nothing"/>
 		<type fullname="UI_OnGameSettingButton" preserve="nothing"/>
+		<type fullname="UI_SettingsPanel" preserve="nothing"/>
 		<type fullname="UI_WinButton" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.2D.Animation.Runtime">
@@ -107,6 +112,7 @@
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
 		<type fullname="TMPro.TMP_ColorGradient" preserve="nothing"/>
+		<type fullname="TMPro.TMP_Dropdown" preserve="nothing"/>
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
@@ -134,6 +140,7 @@
 		<type fullname="UnityEngine.BoxCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
+		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
@@ -166,7 +173,6 @@
 		<type fullname="UnityEngine.Tilemaps.TilemapCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Tilemaps.TilemapRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
-		<type fullname="UnityEngine.Video.VideoPlayer" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.TilemapModule">
 		<type fullname="UnityEngine.Tilemaps.Tile" preserve="nothing"/>
@@ -182,9 +188,9 @@
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.LayoutElement" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Mask" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.RawImage" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Scrollbar" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ScrollRect" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Toggle" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="nothing"/>

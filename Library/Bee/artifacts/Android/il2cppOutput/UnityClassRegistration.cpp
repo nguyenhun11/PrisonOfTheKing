@@ -54,11 +54,11 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_SpriteShape();
 	RegisterModule_SpriteShape();
 
+	void RegisterModule_SpriteMask();
+	RegisterModule_SpriteMask();
+
 	void RegisterModule_Subsystems();
 	RegisterModule_Subsystems();
-
-	void RegisterModule_TLS();
-	RegisterModule_TLS();
 
 	void RegisterModule_Terrain();
 	RegisterModule_Terrain();
@@ -75,9 +75,6 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Tilemap();
 	RegisterModule_Tilemap();
 
-	void RegisterModule_SpriteMask();
-	RegisterModule_SpriteMask();
-
 	void RegisterModule_UI();
 	RegisterModule_UI();
 
@@ -87,20 +84,14 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_UnityAnalyticsCommon();
 	RegisterModule_UnityAnalyticsCommon();
 
-	void RegisterModule_UnityWebRequest();
-	RegisterModule_UnityWebRequest();
-
 	void RegisterModule_VFX();
 	RegisterModule_VFX();
 
-	void RegisterModule_VR();
-	RegisterModule_VR();
-
-	void RegisterModule_Video();
-	RegisterModule_Video();
-
 	void RegisterModule_XR();
 	RegisterModule_XR();
+
+	void RegisterModule_VR();
+	RegisterModule_VR();
 
 }
 
@@ -210,13 +201,12 @@ class VFXManager; template <> void RegisterUnityClass<VFXManager>(const char*);
 class VisualEffect; template <> void RegisterUnityClass<VisualEffect>(const char*);
 class VisualEffectAsset; template <> void RegisterUnityClass<VisualEffectAsset>(const char*);
 class VisualEffectObject; template <> void RegisterUnityClass<VisualEffectObject>(const char*);
-class VideoPlayer; template <> void RegisterUnityClass<VideoPlayer>(const char*);
 
 void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 99 non stripped classes
+	//Total: 98 non stripped classes
 	//0. AnimationClip
 	RegisterUnityClass<AnimationClip>("Animation");
 	//1. Animator
@@ -413,7 +403,5 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<VisualEffectAsset>("VFX");
 	//97. VisualEffectObject
 	RegisterUnityClass<VisualEffectObject>("VFX");
-	//98. VideoPlayer
-	RegisterUnityClass<VideoPlayer>("Video");
 
 }

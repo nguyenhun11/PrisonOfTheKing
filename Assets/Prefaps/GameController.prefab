@@ -152,6 +152,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f2774751da1c70147bb24820bc851bcf, type: 2}
   - {fileID: 11400000, guid: 6ed79aee9e529754fae366f680c0f372, type: 2}
   - {fileID: 11400000, guid: 9863cb9d8adf79548ba066e8adac9a10, type: 2}
+  - {fileID: 11400000, guid: a060390b7b75e514f8db59de548a013a, type: 2}
 --- !u!114 &4144010692417326100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8618fe9331735864bbf4ba92e4d64eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffectSlider: {fileID: 0}
 --- !u!114 &8799924209650607834
 MonoBehaviour:
   m_ObjectHideFlags: 0

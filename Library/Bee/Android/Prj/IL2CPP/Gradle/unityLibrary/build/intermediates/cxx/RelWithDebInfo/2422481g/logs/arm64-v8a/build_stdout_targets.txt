@@ -1,0 +1,12 @@
+ninja: Entering directory `D:\3.CreateGame\PrisonOfTheKing\.utmp\RelWithDebInfo\2422481g\arm64-v8a'
+[1/11] Building CXX object FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o
+[2/11] Linking CXX shared library D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\2422481g\obj\arm64-v8a\libswappywrapper.so
+[3/11] Building CXX object GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o
+[4/11] Building CXX object GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o
+[5/11] Building CXX object GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o
+[6/11] Building CXX object GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o
+[7/11] Building CXX object GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o
+[8/11] Building CXX object GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o
+[9/11] Building CXX object GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o
+[10/11] Building CXX object GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o
+[11/11] Linking CXX shared library D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\2422481g\obj\arm64-v8a\libgame.so
