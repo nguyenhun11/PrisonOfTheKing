@@ -74,6 +74,7 @@ public class Item_Bomb : MonoBehaviour
     private void Boom()
     {
         _animator.SetTrigger("Boom");
+        Controller_Sound.Play("Boom");
     }
 
     public void DestroySelf()

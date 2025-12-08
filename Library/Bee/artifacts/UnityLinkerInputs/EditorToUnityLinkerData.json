@@ -105,8 +105,9 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -115,6 +116,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -138,8 +140,9 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -148,6 +151,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -156,6 +160,20 @@
             "nativeClass": "GlobalGameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "IntroScene",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Item_Ball",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -199,8 +217,9 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -209,6 +228,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -225,8 +245,9 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -235,6 +256,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -251,8 +273,9 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -261,6 +284,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -445,8 +469,9 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -455,6 +480,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -485,8 +511,9 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -495,6 +522,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -539,8 +567,9 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -549,6 +578,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -558,8 +588,9 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -568,6 +599,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -577,8 +609,9 @@
             "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -587,6 +620,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -596,8 +630,9 @@
             "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -606,6 +641,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -615,8 +651,9 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -625,6 +662,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -634,8 +672,9 @@
             "fullManagedTypeName": "UnityEngine.AudioClip",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -644,6 +683,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -653,8 +693,9 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -663,6 +704,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -672,8 +714,9 @@
             "fullManagedTypeName": "UnityEngine.AudioSource",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -682,6 +725,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -691,8 +735,9 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -701,6 +746,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -710,8 +756,9 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider2D",
             "moduleName": "Physics2D",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -725,8 +772,9 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -735,6 +783,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -744,8 +793,9 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -754,6 +804,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -763,8 +814,9 @@
             "fullManagedTypeName": "UnityEngine.CanvasGroup",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -773,6 +825,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -782,8 +835,9 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -792,7 +846,17 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "CircleCollider2D",
+            "fullManagedTypeName": "UnityEngine.CircleCollider2D",
+            "moduleName": "Physics2D",
+            "usedInScenes": [
+                "Assets/Data/Level8/Level8.unity"
             ]
         },
         {
@@ -801,8 +865,9 @@
             "fullManagedTypeName": "UnityEngine.Collider2D",
             "moduleName": "Physics2D",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -816,8 +881,9 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -826,6 +892,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -835,8 +902,9 @@
             "fullManagedTypeName": "UnityEngine.CompositeCollider2D",
             "moduleName": "Physics2D",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -857,8 +925,9 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -867,6 +936,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -890,15 +960,17 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
                 "Assets/Scenes/Level6.unity",
                 "Assets/Scenes/Level7.unity",
                 "Assets/Scenes/LevelSelect.unity",
-                "Assets/Scenes/Setting.unity"
+                "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity"
             ]
         },
         {
@@ -907,8 +979,9 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -917,6 +990,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -926,8 +1000,9 @@
             "fullManagedTypeName": "UnityEngine.Grid",
             "moduleName": "Grid",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -941,8 +1016,9 @@
             "fullManagedTypeName": "UnityEngine.GridLayout",
             "moduleName": "Grid",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -998,8 +1074,9 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1008,6 +1085,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1017,15 +1095,17 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
                 "Assets/Scenes/Level6.unity",
                 "Assets/Scenes/Level7.unity",
                 "Assets/Scenes/LevelSelect.unity",
-                "Assets/Scenes/Setting.unity"
+                "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity"
             ]
         },
         {
@@ -1034,8 +1114,9 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1044,6 +1125,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1053,8 +1135,9 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1063,6 +1146,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1072,8 +1156,9 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1082,6 +1167,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1098,8 +1184,9 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1108,6 +1195,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1117,8 +1205,9 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1538,8 +1627,9 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1548,6 +1638,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1557,8 +1648,9 @@
             "fullManagedTypeName": "UnityEngine.Rigidbody2D",
             "moduleName": "Physics2D",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1572,8 +1664,9 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1582,6 +1675,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1591,15 +1685,17 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
                 "Assets/Scenes/Level6.unity",
                 "Assets/Scenes/Level7.unity",
                 "Assets/Scenes/LevelSelect.unity",
-                "Assets/Scenes/Setting.unity"
+                "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity"
             ]
         },
         {
@@ -1608,8 +1704,9 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1618,6 +1715,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1627,8 +1725,9 @@
             "fullManagedTypeName": "UnityEngine.SpriteRenderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1642,8 +1741,9 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1652,6 +1752,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1661,8 +1762,9 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1671,6 +1773,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1680,8 +1783,9 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1690,6 +1794,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1706,8 +1811,9 @@
             "fullManagedTypeName": "UnityEngine.Tilemaps.Tilemap",
             "moduleName": "Tilemap",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1721,8 +1827,9 @@
             "fullManagedTypeName": "UnityEngine.Tilemaps.TilemapCollider2D",
             "moduleName": "Tilemap",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1736,8 +1843,9 @@
             "fullManagedTypeName": "UnityEngine.Tilemaps.TilemapRenderer",
             "moduleName": "Tilemap",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1751,8 +1859,9 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Data/Level2/Level2.unity",
+                "Assets/Data/Level8/Level8.unity",
                 "Assets/Scenes/Level1.unity",
-                "Assets/Scenes/Level2.unity",
                 "Assets/Scenes/Level3.unity",
                 "Assets/Scenes/Level4.unity",
                 "Assets/Scenes/Level5.unity",
@@ -1761,6 +1870,7 @@
                 "Assets/Scenes/LevelSelect.unity",
                 "Assets/Scenes/Lose.unity",
                 "Assets/Scenes/Setting.unity",
+                "Assets/Scenes/StartScene.unity",
                 "Assets/Scenes/Win.unity"
             ]
         },
@@ -1882,6 +1992,24 @@
             "fullManagedTypeName": "UnityEngine.UI.VerticalLayoutGroup",
             "moduleName": "",
             "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "VideoClip",
+            "fullManagedTypeName": "UnityEngine.Video.VideoClip",
+            "moduleName": "Video",
+            "usedInScenes": [
+                "Assets/Scenes/StartScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "VideoPlayer",
+            "fullManagedTypeName": "UnityEngine.Video.VideoPlayer",
+            "moduleName": "Video",
+            "usedInScenes": [
+                "Assets/Scenes/StartScene.unity"
+            ]
         }
     ],
     "allNativeTypes": [

@@ -16,7 +16,7 @@ public class UI_WinButton : MonoBehaviour
 
     private void Home()
     {
-        Controller_Scene.Instance.LoadScene("LevelSelect");
+        Controller_Scene.Instance.LoadScene("StartScene");
     }
 
     private void Replay()

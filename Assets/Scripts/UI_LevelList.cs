@@ -66,11 +66,16 @@ public class UI_LevelList : MonoBehaviour
     private void OnDisable()
     {
         SaveCurrentScrollPosition();
-        Controller_Sound.StopMusic();
+        //Controller_Sound.StopMusic();
     }
     
     public void LoadSettingScene()
     {
         Controller_Scene.Instance.LoadScene("Setting");
+    }
+
+    public void LoadStartScene()
+    {
+        Controller_Scene.Instance.LoadScene("StartScene");
     }
 }

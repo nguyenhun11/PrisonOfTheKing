@@ -2690,10 +2690,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Gizmos_DrawLine_Injected();
 		Register_UnityEngine_Gizmos_DrawLine_Injected();
 
-		//System.Void UnityEngine.Gizmos::DrawWireCube_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
-		void Register_UnityEngine_Gizmos_DrawWireCube_Injected();
-		Register_UnityEngine_Gizmos_DrawWireCube_Injected();
-
 		//System.Void UnityEngine.Gizmos::set_color_Injected(UnityEngine.Color&)
 		void Register_UnityEngine_Gizmos_set_color_Injected();
 		Register_UnityEngine_Gizmos_set_color_Injected();
@@ -4381,10 +4377,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.IntPtr UnityEngine.PhysicsScene2D::OverlapCircle_Internal_Injected(UnityEngine.PhysicsScene2D&,UnityEngine.Vector2&,System.Single,UnityEngine.ContactFilter2D&)
 		void Register_UnityEngine_PhysicsScene2D_OverlapCircle_Internal_Injected();
 		Register_UnityEngine_PhysicsScene2D_OverlapCircle_Internal_Injected();
-
-		//System.Void UnityEngine.PhysicsScene2D::BoxCast_Internal_Injected(UnityEngine.PhysicsScene2D&,UnityEngine.Vector2&,UnityEngine.Vector2&,System.Single,UnityEngine.Vector2&,System.Single,UnityEngine.ContactFilter2D&,UnityEngine.RaycastHit2D&)
-		void Register_UnityEngine_PhysicsScene2D_BoxCast_Internal_Injected();
-		Register_UnityEngine_PhysicsScene2D_BoxCast_Internal_Injected();
 
 		//System.Void UnityEngine.PhysicsScene2D::GetRayIntersection_Internal_Injected(UnityEngine.PhysicsScene2D&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.RaycastHit2D&)
 		void Register_UnityEngine_PhysicsScene2D_GetRayIntersection_Internal_Injected();

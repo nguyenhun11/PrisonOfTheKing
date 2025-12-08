@@ -8,6 +8,8 @@
 			<method name="Pause"/>
 			<method name="Pause"/>
 			<method name="Pause"/>
+			<method name="Pause"/>
+			<method name="RePlay"/>
 			<method name="RePlay"/>
 			<method name="RePlay"/>
 			<method name="RePlay"/>
@@ -22,6 +24,9 @@
 			<method name="Resume"/>
 			<method name="Resume"/>
 			<method name="Resume"/>
+			<method name="Resume"/>
+			<method name="ReturnToMenu"/>
+			<method name="ReturnToMenu"/>
 			<method name="ReturnToMenu"/>
 			<method name="ReturnToMenu"/>
 			<method name="ReturnToMenu"/>
@@ -50,6 +55,7 @@
 		</type>
 		<type fullname="UI_LevelList">
 			<method name="LoadSettingScene"/>
+			<method name="LoadStartScene"/>
 		</type>
 		<type fullname="UI_SettingsPanel">
 			<method name="BackToMenuScene"/>

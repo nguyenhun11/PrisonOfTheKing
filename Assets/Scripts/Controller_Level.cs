@@ -53,6 +53,7 @@ public class Controller_Level : MonoBehaviour
         ShowKey(false);
         
         Controller_Dialogue.Instance.EndDialogue();
+        Controller_Sound.PlayMusic("Level");
 
         Invoke(nameof(CheckEnemiesLeft), 1f);
         //levelData = Controller_LoadLevel.Instance.currentLevel; //Không xóa dòng này, bỏ comment lúc build game
@@ -145,6 +146,7 @@ public class Controller_Level : MonoBehaviour
         levelData.FinishLevel();
         levelData.showNPC = false;
         Controller_LoadLevel.Instance.CompleteCurrentLevel();
+        Controller_Sound.PlayMusic("Win", false);
         StartCoroutine(WaitGameWin());
     }
     

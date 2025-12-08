@@ -3,7 +3,7 @@
 3    package="com.NguyenHun.PrisonOfTheKing"
 4    android:installLocation="preferExternal"
 5    android:versionCode="1"
-6    android:versionName="1.1" >
+6    android:versionName="1.2" >
 7
 8    <uses-sdk
 9        android:minSdkVersion="23"
@@ -82,7 +82,7 @@
 48-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:27:9-29:33
 49            android:name="unity.splash-mode"
 49-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:28:13-45
-50            android:value="0" />
+50            android:value="2" />
 50-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:29:13-30
 51        <meta-data
 51-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:30:9-32:36
@@ -143,8 +143,8 @@
 79-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:58:13-44
 80            android:resizeableActivity="true"
 80-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:59:13-46
-81            android:screenOrientation="fullUser"
-81-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:60:13-49
+81            android:screenOrientation="userLandscape"
+81-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:60:13-54
 82            android:theme="@style/BaseUnityGameActivityTheme" >
 82-->[:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:61:13-62
 83            <intent-filter>

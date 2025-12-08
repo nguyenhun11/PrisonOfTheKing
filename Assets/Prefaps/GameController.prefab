@@ -181,9 +181,6 @@ MonoBehaviour:
   - name: Type
     audioClips:
     - {fileID: 8300000, guid: 5a56fd7261546c34a859e1d4375d33ec, type: 3}
-  - name: Background
-    audioClips:
-    - {fileID: 8300000, guid: 4f62fb4ade4662a4cb2358d1b156c369, type: 3}
   - name: Key
     audioClips:
     - {fileID: 8300000, guid: bff6b55cb75f4124d84ee319e9d9166f, type: 3}
@@ -209,7 +206,40 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 058b5fcadac783e4b814f9e99eb387eb, type: 3}
   - name: OneWayBrick
     audioClips:
-    - {fileID: 8300000, guid: 8f3364c7078fca545ba84b6a57fddd5d, type: 3}
+    - {fileID: 8300000, guid: bd152bb19e0c6d24ea62e7f1032ac41d, type: 3}
+    - {fileID: 8300000, guid: 6ccaaf649eccdce43ab8df4a36c78974, type: 3}
+  - name: FallBrick
+    audioClips:
+    - {fileID: 8300000, guid: 60f113b2f5484614b95fc3555d07763b, type: 3}
+    - {fileID: 8300000, guid: ea9a26c1ecce7ea4fa32cc31d84ece49, type: 3}
+    - {fileID: 8300000, guid: e4bf6ed78bfe8a14ab086559e7fb3acf, type: 3}
+    - {fileID: 8300000, guid: ea760e2d1a8542c478d2d381670e9723, type: 3}
+    - {fileID: 8300000, guid: ae8d289484714d848953cb3b16c40e08, type: 3}
+  - name: Background
+    audioClips:
+    - {fileID: 8300000, guid: 4f62fb4ade4662a4cb2358d1b156c369, type: 3}
+    - {fileID: 8300000, guid: 260ece8da27ceb74da1e51bbd1e7ea36, type: 3}
+    - {fileID: 8300000, guid: 8ac3695cd74d59c4e915e5386581146a, type: 3}
+  - name: Boom
+    audioClips:
+    - {fileID: 8300000, guid: 1e5a6729adc20bd42ae0ba4308544763, type: 3}
+  - name: Win
+    audioClips:
+    - {fileID: 8300000, guid: 1a978f836fa8b94459bcaed7bffcd42f, type: 3}
+    - {fileID: 8300000, guid: 1bc25cbe38047e94da2fb1d07abf6eb6, type: 3}
+  - name: Lose
+    audioClips: []
+  - name: Level
+    audioClips:
+    - {fileID: 8300000, guid: 3da48250d7ba54b4584fe3166ee1a28a, type: 3}
+    - {fileID: 8300000, guid: 4cb0dc7aaa05a95419872ef72c562d44, type: 3}
+    - {fileID: 8300000, guid: eee3284b6ce478749a34c4acb5a1e1ed, type: 3}
+  - name: EnemyDie
+    audioClips: []
+  - name: PlayerMove
+    audioClips: []
+  - name: PlayerDie
+    audioClips: []
 --- !u!82 &8963213940788104227
 AudioSource:
   m_ObjectHideFlags: 0

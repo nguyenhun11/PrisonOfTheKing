@@ -47,7 +47,7 @@
 27-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:5-69
 28            android:name="unity.splash-mode"
 28-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:16-48
-29            android:value="0" />
+29            android:value="2" />
 29-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:49-66
 30        <meta-data
 30-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:5-74
@@ -108,10 +108,10 @@
 58-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:280-311
 59            android:resizeableActivity="true"
 59-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:370-403
-60            android:screenOrientation="fullUser"
-60-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:404-440
+60            android:screenOrientation="userLandscape"
+60-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:404-445
 61            android:theme="@style/BaseUnityGameActivityTheme" >
-61-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:441-490
+61-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:446-495
 62            <intent-filter>
 62-->D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:7-22:23
 63                <category android:name="android.intent.category.LAUNCHER" />

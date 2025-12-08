@@ -26,7 +26,7 @@
         android:extractNativeLibs="true" >
         <meta-data
             android:name="unity.splash-mode"
-            android:value="0" />
+            android:value="2" />
         <meta-data
             android:name="unity.splash-enable"
             android:value="True" />
@@ -57,7 +57,7 @@
             android:hardwareAccelerated="false"
             android:launchMode="singleTask"
             android:resizeableActivity="true"
-            android:screenOrientation="fullUser"
+            android:screenOrientation="userLandscape"
             android:theme="@style/BaseUnityGameActivityTheme" >
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

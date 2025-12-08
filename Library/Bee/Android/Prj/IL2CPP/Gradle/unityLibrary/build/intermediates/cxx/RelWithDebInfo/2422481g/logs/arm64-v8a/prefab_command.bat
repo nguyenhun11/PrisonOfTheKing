@@ -16,6 +16,6 @@
   --ndk-version ^
   27 ^
   --output ^
-  "C:\\Users\\LENOVO\\AppData\\Local\\Temp\\agp-prefab-staging12523356400490673256\\staged-cli-output" ^
+  "C:\\Users\\LENOVO\\AppData\\Local\\Temp\\agp-prefab-staging9098221729165257901\\staged-cli-output" ^
   "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\4533d298259fc52a43021fce53f5e4a9\\transformed\\jetified-games-activity-3.0.5\\prefab" ^
   "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\268849a49ea9eb2bba6f4e0ac95bfd63\\transformed\\jetified-games-frame-pacing-1.10.0\\prefab"

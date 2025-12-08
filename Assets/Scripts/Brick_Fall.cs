@@ -22,7 +22,11 @@ public class Brick_Fall : MonoBehaviour
                 else
                 {
                     travelTile.Stop();
-                    if (collision.TryGetComponent(out PlayerState playerState)) playerState.Fall();
+                    if (collision.TryGetComponent(out PlayerState playerState))
+                    {
+                        playerState.Fall();
+                        Controller_Sound.Play("FallBrick");
+                    }
                 }
             }
         }

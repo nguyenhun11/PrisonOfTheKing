@@ -23,7 +23,7 @@
     </element>
     <element name="defaultConfig" element-id="26" assign-type="None" type="Unity.Android.Gradle.Flavor" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="">
       <element name="consumerProguardFiles" element-id="29" assign-type="None" property-value="proguard-unity.txt" type="Unity.Android.Gradle.PropertyStringArray" base-type="BaseProperty" is-default="true" dependencies="" />
-      <element name="versionName" element-id="32" assign-type="None" property-value="1.1" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
+      <element name="versionName" element-id="32" assign-type="None" property-value="1.2" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
       <element name="minSdk" element-id="34" assign-type="None" property-value="23" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />
       <element name="targetSdk" element-id="35" assign-type="None" property-value="35" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />
       <element name="versionCode" element-id="36" assign-type="None" property-value="1" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />

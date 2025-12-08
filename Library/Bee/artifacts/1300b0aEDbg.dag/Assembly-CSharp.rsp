@@ -460,6 +460,7 @@
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/Effect.cs"
 "Assets/Scripts/Enemy.cs"
+"Assets/Scripts/IntroScene.cs"
 "Assets/Scripts/Item_Ball.cs"
 "Assets/Scripts/Item_Bomb.cs"
 "Assets/Scripts/Item_BrokeBox.cs"

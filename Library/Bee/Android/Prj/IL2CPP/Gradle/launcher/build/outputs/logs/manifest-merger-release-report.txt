@@ -245,7 +245,7 @@ ADDED from [:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\P
 activity#com.unity3d.player.UnityPlayerGameActivity
 ADDED from [:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:52:9-83:20
 	android:screenOrientation
-		ADDED from [:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:60:13-49
+		ADDED from [:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:60:13-54
 	android:enabled
 		ADDED from [:unityLibrary] D:\3.CreateGame\PrisonOfTheKing\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:55:13-35
 	android:launchMode

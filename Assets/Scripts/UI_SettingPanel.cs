@@ -119,16 +119,36 @@ public class UI_SettingsPanel : MonoBehaviour
     private void InitLevelDropdown()
     {
         dropdownLevel.ClearOptions();
-        // Kiểm tra null kỹ càng
+        
         if (Controller_LoadLevel.Instance != null && Controller_LoadLevel.Instance.allLevels != null)
         {
             List<string> options = new List<string>();
-            int totalLevels = Controller_LoadLevel.Instance.allLevels.Count;
+            var allLevels = Controller_LoadLevel.Instance.allLevels;
+            int totalLevels = allLevels.Count;
+
             for (int i = 0; i < totalLevels; i++)
             {
-                options.Add((i + 1).ToString()); 
+                if (!allLevels[i].isLocked)
+                {
+                    options.Add((i + 1).ToString()); 
+                }
             }
+
             dropdownLevel.AddOptions(options);
+
+            // (Tùy chọn) Nếu danh sách trống (chưa xong màn nào), 
+            // bạn có thể thêm text mặc định hoặc disable nút Reset để tránh lỗi
+            if (options.Count == 0)
+            {
+                dropdownLevel.options.Add(new TMP_Dropdown.OptionData("Chưa có màn nào"));
+                dropdownLevel.interactable = false; // Khóa dropdown
+            }
+            else
+            {
+                dropdownLevel.interactable = true;
+                // Chọn mặc định phần tử cuối cùng (level cao nhất đã finish)
+                dropdownLevel.value = options.Count - 1; 
+            }
         }
     }
 

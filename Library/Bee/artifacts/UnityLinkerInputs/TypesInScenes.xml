@@ -14,6 +14,8 @@
 		<type fullname="Door" preserve="nothing"/>
 		<type fullname="Effect" preserve="nothing"/>
 		<type fullname="Enemy" preserve="nothing"/>
+		<type fullname="IntroScene" preserve="nothing"/>
+		<type fullname="Item_Ball" preserve="nothing"/>
 		<type fullname="Item_Bomb" preserve="nothing"/>
 		<type fullname="Item_BrokeBox" preserve="nothing"/>
 		<type fullname="Item_Fire" preserve="nothing"/>
@@ -142,6 +144,7 @@
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
+		<type fullname="UnityEngine.CircleCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
 		<type fullname="UnityEngine.CompositeCollider2D" preserve="nothing"/>
@@ -173,6 +176,8 @@
 		<type fullname="UnityEngine.Tilemaps.TilemapCollider2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Tilemaps.TilemapRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
+		<type fullname="UnityEngine.Video.VideoClip" preserve="nothing"/>
+		<type fullname="UnityEngine.Video.VideoPlayer" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine.TilemapModule">
 		<type fullname="UnityEngine.Tilemaps.Tile" preserve="nothing"/>

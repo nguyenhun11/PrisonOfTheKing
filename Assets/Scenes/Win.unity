@@ -609,6 +609,7 @@ GameObject:
   - component: {fileID: 1385234729}
   - component: {fileID: 1385234731}
   - component: {fileID: 1385234730}
+  - component: {fileID: 1385234732}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -633,7 +634,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1385234730
 MonoBehaviour:
@@ -673,6 +674,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385234728}
   m_CullTransparentMesh: 1
+--- !u!95 &1385234732
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385234728}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d077a4ec85b35b46b73dcba508ad138, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1705919397
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,7 +810,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1793266550
 MonoBehaviour:
@@ -838,14 +861,6 @@ PrefabInstance:
     - target: {fileID: 5253669082279699192, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
       propertyPath: m_Name
       value: GameController
-      objectReference: {fileID: 0}
-    - target: {fileID: 5253669082279699192, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5434686869838355590, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
-      propertyPath: m_Name
-      value: SceneController
       objectReference: {fileID: 0}
     - target: {fileID: 8839991171807546028, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -926,7 +941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -300}
+  m_AnchoredPosition: {x: 0, y: -400}
   m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1819351336
@@ -1205,8 +1220,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 0, y: -300.00003}
+  m_AnchoredPosition: {x: 0, y: -250}
+  m_SizeDelta: {x: 0, y: -500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128539934
 MonoBehaviour:
@@ -1221,8 +1236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 700
-    m_Right: 700
+    m_Left: 500
+    m_Right: 500
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4

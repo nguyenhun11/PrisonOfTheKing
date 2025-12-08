@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         applicationId "com.NguyenHun.PrisonOfTheKing"
-        versionName "1.1"
+        versionName "1.2"
         minSdk 23
         targetSdk 35
         versionCode 1
