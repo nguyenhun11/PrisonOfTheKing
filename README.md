@@ -16,5 +16,3 @@ Vuốt để di chuyển các hướng trái, phải, lên, xuống, mục tiêu
 Tải xuống file cài đặt (apk) dành cho android tại [Google Drive](https://drive.google.com/drive/folders/1yBTcpZkYgusZC29g1rMEb-XEdG-h02RG?usp=sharing) hoặc trên [Itch.io](https://nguyenhun11.itch.io/prison-of-the-king) (để lại comment và đánh giá cho mình nhé).
 - Mở file apk đã tải, chọn cài đặt, (cứ yên tâm là mình chưa đủ trình để làm cho file apk không an toàn đâu nên cứ quét và cài đặt bình thường nhé)
 - Ứng dụng sẽ xuất hiện trên màn hình điện thoại, mở lên, xoay màn hình ngang lại và tận hưởng hành trình trốn thoát nhé.
-
-<iframe frameborder="0" src="https://itch.io/embed/4101023" width="552" height="167"><a href="https://nguyenhun11.itch.io/prison-of-the-king">Prison of the King by nguyenhun11</a></iframe>
