@@ -1,0 +1,453 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.39f1 (15ea7ed0b100) revision 1436286'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 11995 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/3.CreateGame/PrisonOfTheKing
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+57690
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: D:/3.CreateGame/PrisonOfTheKing
+D:/3.CreateGame/PrisonOfTheKing
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8120]  Target information:
+
+Player connection [8120]  * "[IP] 172.21.16.1 [Port] 0 [Flags] 2 [Guid] 42749733 [EditorId] 42749733 [Version] 1048832 [Id] WindowsEditor(7,NGUYEN-HUN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [8120]  * "[IP] 192.168.2.56 [Port] 0 [Flags] 2 [Guid] 42749733 [EditorId] 42749733 [Version] 1048832 [Id] WindowsEditor(7,NGUYEN-HUN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [8120] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8120] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 11.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.39f1 (15ea7ed0b100)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/3.CreateGame/PrisonOfTheKing/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2050 (ID=0x25ed)
+    Vendor:   NVIDIA
+    VRAM:     3964 MB
+    Driver:   32.0.15.7262
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.015884 seconds.
+- Loaded All Assemblies, in  0.797 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 634 ms
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.123 seconds
+Domain Reload Profiling: 1914ms
+	BeginReloadAssembly (319ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (124ms)
+	LoadAllAssembliesAndSetupDomain (275ms)
+		LoadAssemblies (315ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (269ms)
+			TypeCache.Refresh (267ms)
+				TypeCache.ScanAssembly (249ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1123ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1068ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (785ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (141ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.340 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.823 seconds
+Domain Reload Profiling: 3159ms
+	BeginReloadAssembly (228ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (980ms)
+		LoadAssemblies (684ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (434ms)
+			TypeCache.Refresh (273ms)
+				TypeCache.ScanAssembly (249ms)
+			BuildScriptInfoCaches (141ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1824ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1581ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (221ms)
+			ProcessInitializeOnLoadAttributes (1055ms)
+			ProcessInitializeOnLoadMethodAttributes (274ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.44 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6751 unused Assets / (5.3 MB). Loaded Objects now: 7471.
+Memory consumption went from 181.6 MB to 176.2 MB.
+Total: 14.648100 ms (FindLiveObjects: 1.764200 ms CreateObjectMapping: 0.654000 ms MarkObjects: 7.788800 ms  DeleteObjects: 4.439400 ms)
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.890 seconds
+Refreshing native plugins compatible for Editor in 4.59 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.708 seconds
+Domain Reload Profiling: 6600ms
+	BeginReloadAssembly (861ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (3925ms)
+		LoadAssemblies (4323ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (318ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (280ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (1708ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1353ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (265ms)
+			ProcessInitializeOnLoadAttributes (938ms)
+			ProcessInitializeOnLoadMethodAttributes (104ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 2.15 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6749 unused Assets / (4.9 MB). Loaded Objects now: 7475.
+Memory consumption went from 148.5 MB to 143.5 MB.
+Total: 12.721900 ms (FindLiveObjects: 0.980000 ms CreateObjectMapping: 0.746300 ms MarkObjects: 7.427000 ms  DeleteObjects: 3.564700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.407 seconds
+Refreshing native plugins compatible for Editor in 2.08 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.302 seconds
+Domain Reload Profiling: 4769ms
+	BeginReloadAssembly (566ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (81ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (152ms)
+	RebuildCommonClasses (186ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (1643ms)
+		LoadAssemblies (1084ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (710ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (575ms)
+			ResolveRequiredComponents (30ms)
+	FinalizeReload (2303ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1786ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (56ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (416ms)
+			ProcessInitializeOnLoadAttributes (1188ms)
+			ProcessInitializeOnLoadMethodAttributes (106ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 2.42 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6749 unused Assets / (5.4 MB). Loaded Objects now: 7478.
+Memory consumption went from 148.5 MB to 143.1 MB.
+Total: 23.518000 ms (FindLiveObjects: 1.262500 ms CreateObjectMapping: 1.313500 ms MarkObjects: 13.367500 ms  DeleteObjects: 7.567600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 181369.909870 seconds.
+  path: Assets/LevelData/Level12/LV12_9.asset
+  artifactKey: Guid(ad1936bc1e3ea994a835fd8b0542a543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelData/Level12/LV12_9.asset using Guid(ad1936bc1e3ea994a835fd8b0542a543) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7dbc5273e43859c9ee8e93be1f51284') in 0.2739868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 151.763990 seconds.
+  path: Assets/LevelData/Level12/LV12_8.asset
+  artifactKey: Guid(ba53d01df922db84db2b11716161c76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelData/Level12/LV12_8.asset using Guid(ba53d01df922db84db2b11716161c76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a0b480d51de7bd1d83ecf6b51cfddd5b') in 0.00346 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.364861 seconds.
+  path: Assets/LevelData/Level12/LV12_0.asset
+  artifactKey: Guid(ab0a2ae52e5635b4ca2db37662c6439e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelData/Level12/LV12_0.asset using Guid(ab0a2ae52e5635b4ca2db37662c6439e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5fe666f2fc65b366981235eb9d48d15c') in 0.0036921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.285 seconds
+Refreshing native plugins compatible for Editor in 1.85 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.928 seconds
+Domain Reload Profiling: 4259ms
+	BeginReloadAssembly (803ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (94ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (292ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (1408ms)
+		LoadAssemblies (1233ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (410ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (366ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1929ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1521ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (314ms)
+			ProcessInitializeOnLoadAttributes (1027ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 2.94 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6749 unused Assets / (5.0 MB). Loaded Objects now: 7484.
+Memory consumption went from 149.1 MB to 144.0 MB.
+Total: 27.188700 ms (FindLiveObjects: 2.034800 ms CreateObjectMapping: 1.758300 ms MarkObjects: 15.357800 ms  DeleteObjects: 8.034400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.094 seconds
+Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.575 seconds
+Domain Reload Profiling: 2670ms
+	BeginReloadAssembly (303ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (73ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (696ms)
+		LoadAssemblies (568ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (278ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (249ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1576ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1285ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (230ms)
+			ProcessInitializeOnLoadAttributes (898ms)
+			ProcessInitializeOnLoadMethodAttributes (126ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 2.97 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6749 unused Assets / (5.4 MB). Loaded Objects now: 7487.
+Memory consumption went from 149.1 MB to 143.7 MB.
+Total: 31.141200 ms (FindLiveObjects: 0.945400 ms CreateObjectMapping: 1.713400 ms MarkObjects: 21.483200 ms  DeleteObjects: 6.996000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 728.906800 seconds.
+  path: Assets/LevelData/Level12/Level12.asset
+  artifactKey: Guid(2b7f9aa6336e3584e80043e61fc873fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelData/Level12/Level12.asset using Guid(2b7f9aa6336e3584e80043e61fc873fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61575e10c32cde5b64032412ba7163e6') in 0.2440625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LevelData/Level12/LV12_8.asset
+  artifactKey: Guid(ba53d01df922db84db2b11716161c76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelData/Level12/LV12_8.asset using Guid(ba53d01df922db84db2b11716161c76a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f78d1b0314d23eea2d9d0d61dada72d') in 0.0032464 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LevelData/Level12/LV12_9.asset
+  artifactKey: Guid(ad1936bc1e3ea994a835fd8b0542a543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelData/Level12/LV12_9.asset using Guid(ad1936bc1e3ea994a835fd8b0542a543) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61a6eb68d88ab27c139795ef563f3d9f') in 0.0016139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LevelData/Level12/LV12_10.asset
+  artifactKey: Guid(1264070713352fb458aeb52adffa5941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelData/Level12/LV12_10.asset using Guid(1264070713352fb458aeb52adffa5941) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0fa5b1287151428725c79e4d8b415237') in 0.001879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -54,14 +54,15 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (inputThisFrame != Tile.DIR.NONE)
             {
-                MoveCharacter(inputThisFrame);
+                MoveCharacter(inputThisFrame, true);
             }
         }
     }
 
-    public void MoveCharacter(Tile.DIR direction)
+    public void MoveCharacter(Tile.DIR direction, bool sound = false)
     {
         _travelTile.Move(direction);
+        if (sound) Controller_Sound.Play("PlayerMove");
         OnPlayerMoved?.Invoke(direction);
     }
 

@@ -50,6 +50,10 @@ public class Door : MonoBehaviour
             CanOpenDoor(false);
             if (playerTravelTile != null) playerTravelTile.Move(_tile.currNode);
             if (playerAnimator != null) playerAnimator.JumpIn();
+            if (playerAnimator.TryGetComponent(out PlayerMovement playerMovement))
+            {
+                playerMovement.canMove = false;
+            }
             OnDoorOpen?.Invoke();
         }
     }

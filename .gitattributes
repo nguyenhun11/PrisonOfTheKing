@@ -6,3 +6,4 @@
 *.dag.json filter=lfs diff=lfs merge=lfs -text
 *.payloads filter=lfs diff=lfs merge=lfs -text
 *.aar filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text

@@ -1,5 +1,0 @@
-Using template 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/AndroidPlayer\Apk\LauncherManifest.xml'
-
-@mipmap/app_icon_round resource was set because:
-	Round Icons were set
-	Round Icons are supported

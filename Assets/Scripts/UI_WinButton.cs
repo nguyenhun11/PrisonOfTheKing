@@ -5,13 +5,13 @@ public class UI_WinButton : MonoBehaviour
 {
     public Button home;
     public Button replay;
-    public Button menu;
+    public Button next;
 
     void Start()
     {
         home.onClick.AddListener(Home);
         replay.onClick.AddListener(Replay);
-        menu.onClick.AddListener(Menu);
+        next.onClick.AddListener(LoadNextLevel);
     }
 
     private void Home()
@@ -21,11 +21,28 @@ public class UI_WinButton : MonoBehaviour
 
     private void Replay()
     {
-        Controller_LoadLevel.Instance.LoadLevel();
+        if (Controller_LoadLevel.Instance.currentLevel == null)
+        {
+            Home();
+        }
+        else
+        {
+            Controller_LoadLevel.Instance.LoadLevel();
+        }
     }
 
-    private void Menu()
+    private void LoadNextLevel()
     {
-        Controller_Scene.Instance.LoadScene("LevelSelect");
+        if (Controller_LoadLevel.Instance.currentLevel == null 
+            || Controller_LoadLevel.Instance.currentLevel.nextLevels == null
+            || Controller_LoadLevel.Instance.currentLevel.nextLevels.Count == 0)
+        {
+            Home();
+        }
+        else
+        {
+            Controller_LoadLevel.Instance.currentLevel = Controller_LoadLevel.Instance.currentLevel.nextLevels[0];
+            Controller_LoadLevel.Instance.LoadLevel();
+        }
     }
 }

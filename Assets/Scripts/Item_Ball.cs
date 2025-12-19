@@ -44,7 +44,6 @@ public class Item_Ball : MonoBehaviour
             return;
         }
         Debug.Log("Ball stop and not break");
-        // KHÔNG check ngay lập tức, hãy chờ vật lý ổn định
         StartCoroutine(CheckGroundAndDecide());
     }
 

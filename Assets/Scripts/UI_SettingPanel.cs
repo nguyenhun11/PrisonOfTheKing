@@ -20,6 +20,13 @@ public class UI_SettingsPanel : MonoBehaviour
     [SerializeField] private Button btnExecuteReset;
     [SerializeField] private Button btnToggleLanguage;
 
+    [Header("--- CONFIRM RESET LEVEL ---")]
+    [SerializeField] private GameObject confirmPanel;
+    [SerializeField] private TextMeshProUGUI txtConfirmTitle;
+    [SerializeField] private TextMeshProUGUI txtConfirmMessage;
+    [SerializeField] private Button btnYesButton;
+    [SerializeField] private Button btnNoButton;
+        
     private void Start()
     {
         // 1. Setup Audio (Lấy giá trị từ Controller -> JSON)
@@ -42,8 +49,9 @@ public class UI_SettingsPanel : MonoBehaviour
         btnToggleLanguage.onClick.AddListener(OnLanguageToggleClicked);
 
         // 3. Setup Reset Level
+        confirmPanel.SetActive(false);
         InitLevelDropdown();
-        btnExecuteReset.onClick.AddListener(OnResetClicked);
+        btnExecuteReset.onClick.AddListener(OpenConfirmPanel);
     }
 
     private void OnDestroy()
@@ -119,31 +127,86 @@ public class UI_SettingsPanel : MonoBehaviour
     private void InitLevelDropdown()
     {
         dropdownLevel.ClearOptions();
-        // Kiểm tra null kỹ càng
+        
         if (Controller_LoadLevel.Instance != null && Controller_LoadLevel.Instance.allLevels != null)
         {
             List<string> options = new List<string>();
-            int totalLevels = Controller_LoadLevel.Instance.allLevels.Count;
+            var allLevels = Controller_LoadLevel.Instance.allLevels;
+            int totalLevels = allLevels.Count;
+
             for (int i = 0; i < totalLevels; i++)
             {
-                options.Add((i + 1).ToString()); 
+                if (!allLevels[i].isLocked)
+                {
+                    options.Add(allLevels[i].levelName); 
+                }
             }
+
             dropdownLevel.AddOptions(options);
+
+            // (Tùy chọn) Nếu danh sách trống (chưa xong màn nào), 
+            // bạn có thể thêm text mặc định hoặc disable nút Reset để tránh lỗi
+            if (options.Count == 0)
+            {
+                dropdownLevel.options.Add(new TMP_Dropdown.OptionData("Chưa có màn nào"));
+                dropdownLevel.interactable = false; // Khóa dropdown
+            }
+            else
+            {
+                dropdownLevel.interactable = true;
+                // Chọn mặc định phần tử cuối cùng (level cao nhất đã finish)
+                dropdownLevel.value = options.Count - 1; 
+            }
         }
     }
 
-    private void OnResetClicked()
+    private void OpenConfirmPanel()
     {
+        confirmPanel.SetActive(true);
+        GenerateConfirmMessage(Controller_GeneralSetting.Instance.currentLanguage,
+            dropdownLevel.options[dropdownLevel.value].text);
+    }
+    
+    private void CloseConfirmPanel()
+    {
+        confirmPanel.SetActive(false);
+    }
+
+    private void GenerateConfirmMessage(Controller_GeneralSetting.Language lang, string level)
+    {
+        if (lang == Controller_GeneralSetting.Language.Vietnamese)
+        {
+            txtConfirmTitle.text = "Bạn chắc chắn muốn khóa màn?";
+            txtConfirmMessage.text = $"Màn {level} sẽ được khôi phục lời thoại, các màn sau đó sẽ được khóa lại";
+            btnYesButton.GetComponentInChildren<TextMeshProUGUI>().text = "Có";
+            btnNoButton.GetComponentInChildren<TextMeshProUGUI>().text = "Không";
+        }
+        else
+        {
+            txtConfirmTitle.text = "Are you sure to lock this level";
+            txtConfirmMessage.text = $"Level {level} will have its dialogues restored, and the subsequent stages will be locked again";
+            btnYesButton.GetComponentInChildren<TextMeshProUGUI>().text = "Yes";
+            btnNoButton.GetComponentInChildren<TextMeshProUGUI>().text = "No";
+        }
+        btnYesButton.onClick.RemoveAllListeners();
+        btnYesButton.onClick.AddListener(ResetLevel);
+        btnNoButton.onClick.RemoveAllListeners();
+        btnNoButton.onClick.AddListener(CloseConfirmPanel);
+        
+    }
+
+    private void ResetLevel()
+    {
+        BackToMenuScene();
         if (Controller_LoadLevel.Instance != null)
         {
-            int selectedLevel = dropdownLevel.value + 1;
+            string selectedLevel = dropdownLevel.options[dropdownLevel.value].text;
             Controller_LoadLevel.Instance.ResetToLevel(selectedLevel);
         }
     }
 
     public void BackToMenuScene()
     {
-        // Đảm bảo tên Scene chính xác
         Controller_Scene.Instance.LoadScene("LevelSelect");
     }
 }

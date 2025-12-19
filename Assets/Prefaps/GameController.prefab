@@ -149,10 +149,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 387550cc15f4e604fbb6f65f224c2d59, type: 2}
   - {fileID: 11400000, guid: a82f9b78dba2e724f9073f4ca93bdb2e, type: 2}
   - {fileID: 11400000, guid: ba0a5dcd92229384fae41e4b9943b6e6, type: 2}
+  - {fileID: 11400000, guid: 0c64fab0ffb383f438d4536860450c3f, type: 2}
   - {fileID: 11400000, guid: f2774751da1c70147bb24820bc851bcf, type: 2}
   - {fileID: 11400000, guid: 6ed79aee9e529754fae366f680c0f372, type: 2}
   - {fileID: 11400000, guid: 9863cb9d8adf79548ba066e8adac9a10, type: 2}
   - {fileID: 11400000, guid: a060390b7b75e514f8db59de548a013a, type: 2}
+  - {fileID: 11400000, guid: 57e7052bcde804040b75b250a9b54d00, type: 2}
+  - {fileID: 11400000, guid: 5ee27f9e31fe32f47804e1a53b05dc2a, type: 2}
+  - {fileID: 11400000, guid: d42b79b957462bc4bac89ffe09eb0e2b, type: 2}
+  - {fileID: 11400000, guid: 2b7f9aa6336e3584e80043e61fc873fa, type: 2}
+  - {fileID: 11400000, guid: b1579761214d33941b1290815313133d, type: 2}
 --- !u!114 &4144010692417326100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,9 +187,6 @@ MonoBehaviour:
   - name: Type
     audioClips:
     - {fileID: 8300000, guid: 5a56fd7261546c34a859e1d4375d33ec, type: 3}
-  - name: Background
-    audioClips:
-    - {fileID: 8300000, guid: 4f62fb4ade4662a4cb2358d1b156c369, type: 3}
   - name: Key
     audioClips:
     - {fileID: 8300000, guid: bff6b55cb75f4124d84ee319e9d9166f, type: 3}
@@ -209,7 +212,48 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 058b5fcadac783e4b814f9e99eb387eb, type: 3}
   - name: OneWayBrick
     audioClips:
-    - {fileID: 8300000, guid: 8f3364c7078fca545ba84b6a57fddd5d, type: 3}
+    - {fileID: 8300000, guid: bd152bb19e0c6d24ea62e7f1032ac41d, type: 3}
+    - {fileID: 8300000, guid: 6ccaaf649eccdce43ab8df4a36c78974, type: 3}
+  - name: FallBrick
+    audioClips:
+    - {fileID: 8300000, guid: 365ec229fcc90494486a8d9abaeb8b5d, type: 3}
+  - name: Spring
+    audioClips:
+    - {fileID: 8300000, guid: 7660dbc17e40cc44990d82fdfb3889cc, type: 3}
+  - name: Background
+    audioClips:
+    - {fileID: 8300000, guid: 4f62fb4ade4662a4cb2358d1b156c369, type: 3}
+    - {fileID: 8300000, guid: 260ece8da27ceb74da1e51bbd1e7ea36, type: 3}
+    - {fileID: 8300000, guid: 8ac3695cd74d59c4e915e5386581146a, type: 3}
+  - name: Boom
+    audioClips:
+    - {fileID: 8300000, guid: 1e5a6729adc20bd42ae0ba4308544763, type: 3}
+  - name: Win
+    audioClips:
+    - {fileID: 8300000, guid: 1a978f836fa8b94459bcaed7bffcd42f, type: 3}
+    - {fileID: 8300000, guid: 1bc25cbe38047e94da2fb1d07abf6eb6, type: 3}
+  - name: Lose
+    audioClips:
+    - {fileID: 8300000, guid: 2c0b264616b2de846835eeb0fc212102, type: 3}
+    - {fileID: 8300000, guid: 23a9d2618bdaaaf47bab7ad9d943c868, type: 3}
+    - {fileID: 8300000, guid: 2db99fdb11d68d942bbb08a0e5e0a3fd, type: 3}
+  - name: Level
+    audioClips:
+    - {fileID: 8300000, guid: 3da48250d7ba54b4584fe3166ee1a28a, type: 3}
+    - {fileID: 8300000, guid: 4cb0dc7aaa05a95419872ef72c562d44, type: 3}
+    - {fileID: 8300000, guid: eee3284b6ce478749a34c4acb5a1e1ed, type: 3}
+  - name: PlayerMove
+    audioClips:
+    - {fileID: 8300000, guid: d9fcee41e56c1ed41aa3c3c711d988cf, type: 3}
+  - name: PlayerDie
+    audioClips:
+    - {fileID: 8300000, guid: d6e742aebeaf7c64f880329fe60b6839, type: 3}
+    - {fileID: 8300000, guid: f976589bdf8882b46b735b89cffadb73, type: 3}
+  - name: EnemyDie
+    audioClips:
+    - {fileID: 8300000, guid: 3e30a560b6c910c44af597eef15ed234, type: 3}
+    - {fileID: 8300000, guid: 4efdfb00837a85b4da88f3b37ec70fc7, type: 3}
+    - {fileID: 8300000, guid: 844d769c7ae10a141be9ae4ae8d6a776, type: 3}
 --- !u!82 &8963213940788104227
 AudioSource:
   m_ObjectHideFlags: 0
@@ -873,12 +917,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

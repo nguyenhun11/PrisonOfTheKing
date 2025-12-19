@@ -8,7 +8,6 @@ public class TravelTile : Tile
     public LayerMask wallLayer;
     public LayerMask tileLayer;
     public bool IsMoving { get; private set; }
-    public bool DebugIsMoving;
     public float moveSpeed = 5f;
     public Tile.DIR MoveDir;
     
@@ -19,6 +18,7 @@ public class TravelTile : Tile
 
     private TravelTile _followerTile = null;
     private Collider2D _collider2D;
+    private Rigidbody2D _rb;
 
     public delegate void StateDelegate();
 
@@ -31,23 +31,48 @@ public class TravelTile : Tile
     {
         SnapToNode();
         _collider2D = GetComponent<Collider2D>(); // Đảm bảo dòng này có
+        _rb = GetComponent<Rigidbody2D>();
     }
     
-    void Update()
+    void FixedUpdate()
     {
         MoveToTarget();
-        DebugIsMoving = IsMoving;
     }
 
+    // private void MoveToTarget()
+    // {
+    //     if (IsMoving && _targetNode != null && (currNode.x != _targetNode.x || currNode.y != _targetNode.y))
+    //     {
+    //         Vector3 targetPos = _targetNode.Position();
+    //         transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+    //
+    //         if (Vector3.Distance(transform.position, targetPos) < 0.001f)
+    //         {
+    //             Stop(); 
+    //         }
+    //     }
+    // }
+    
     private void MoveToTarget()
     {
+        // Kiểm tra điều kiện di chuyển
         if (IsMoving && _targetNode != null && (currNode.x != _targetNode.x || currNode.y != _targetNode.y))
         {
-            Vector3 targetPos = _targetNode.Position();
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+            Vector2 targetPos = _targetNode.Position();
+            
+            // Tính toán vị trí tiếp theo bằng MoveTowards nhưng dựa trên vị trí của Rigidbody
+            // Lưu ý dùng Time.fixedDeltaTime thay vì Time.deltaTime trong FixedUpdate
+            Vector2 newPos = Vector2.MoveTowards(_rb.position, targetPos, moveSpeed * Time.fixedDeltaTime);
 
-            if (Vector3.Distance(transform.position, targetPos) < 0.001f)
+            // Dùng MovePosition để di chuyển. 
+            // Hàm này sẽ kiểm tra va chạm trên đường đi. Nếu vướng, nó sẽ dừng lại thay vì đi xuyên qua.
+            _rb.MovePosition(newPos);
+
+            // Kiểm tra đến đích
+            if (Vector2.Distance(_rb.position, targetPos) < 0.001f)
             {
+                // Hard snap vị trí cuối cùng để đảm bảo chính xác tuyệt đối
+                _rb.position = targetPos; 
                 Stop(); 
             }
         }
@@ -63,7 +88,7 @@ public class TravelTile : Tile
         Vector2 dirVec = DirToVector2[dir];
 
         // Lưu ý: Nên dùng độ dài < 1 (ví dụ 0.8f) để tránh bắn xuyên sang ô kế tiếp quá sâu
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirVec, 1f, wallLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dirVec, 1.1f, wallLayer);
 
         if (_collider2D != null) _collider2D.enabled = true;
 
@@ -152,6 +177,7 @@ public class TravelTile : Tile
         IsMoving = false; 
         MoveDir = DIR.NONE;
         currNode = SnapToNode(); 
+        transform.position = currNode.Position();
         _targetNode = currNode;
         
         if (_followerTile != null)

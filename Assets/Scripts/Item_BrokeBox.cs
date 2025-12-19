@@ -43,6 +43,7 @@ public class Item_BrokeBox : MonoBehaviour
     {
         if (!CanBreak(breakBySide)) return;
         _animator.SetTrigger("Break");
+        Controller_Sound.Play("Boom");
         if (_collider != null) _collider.enabled = false;
     }
     

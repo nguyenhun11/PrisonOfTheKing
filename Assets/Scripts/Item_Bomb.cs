@@ -11,6 +11,8 @@ public class Item_Bomb : MonoBehaviour
     public Road_Full roadFull;
     
     private bool isHeadingToEnd = true; 
+    private Collider2D _collider2D;
+    private bool _isExplored = false;
 
     // Item_Bomb.cs
 
@@ -41,7 +43,9 @@ public class Item_Bomb : MonoBehaviour
         if (roadFull.endPoint.currNode == null) roadFull.endPoint.SnapToNode();
 
         // Bắt đầu di chuyển lần đầu tiên TẠI ĐÂY
-        ChangeDirection(); 
+        ChangeDirection();
+        _collider2D = GetComponent<Collider2D>();
+        _collider2D.enabled = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -58,22 +62,26 @@ public class Item_Bomb : MonoBehaviour
 
     private void HandleItemType(Collider2D other)
     {
-        if (other.TryGetComponent(out PlayerState otherPlayerState))
-        {
-            otherPlayerState.Die();
-            Boom();
-        }
-
+        if (_isExplored) return;
+        _isExplored = true;
         if (other.TryGetComponent(out Enemy enemy))
         {
             enemy.Die();
             Boom();
         }
+        else if (other.TryGetComponent(out PlayerState otherPlayerState))
+        {
+            otherPlayerState.Die();
+            Boom();
+        }
+
     }
 
     private void Boom()
     {
         _animator.SetTrigger("Boom");
+        _collider2D.enabled = false;
+        Controller_Sound.Play("Boom");
     }
 
     public void DestroySelf()

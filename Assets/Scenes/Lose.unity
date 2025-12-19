@@ -167,12 +167,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3728368109473366486, guid: ea345c9cdb3637640be2cd6fbe58be38, type: 3}
+  m_Sprite: {fileID: 7042847911465117151, guid: d3f603cca9021d142aa3f583ff7f9cec, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -513,7 +513,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1385234730
 MonoBehaviour:
@@ -667,7 +667,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 300}
+  m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1793266550
 MonoBehaviour:
@@ -718,14 +718,6 @@ PrefabInstance:
     - target: {fileID: 5253669082279699192, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
       propertyPath: m_Name
       value: GameController
-      objectReference: {fileID: 0}
-    - target: {fileID: 5253669082279699192, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5434686869838355590, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
-      propertyPath: m_Name
-      value: SceneController
       objectReference: {fileID: 0}
     - target: {fileID: 8839991171807546028, guid: 3e01d7d38332c1443891a2ed06e39c28, type: 3}
       propertyPath: m_LocalPosition.x
@@ -806,7 +798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -300}
+  m_AnchoredPosition: {x: 0, y: -400}
   m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1819351336
@@ -949,7 +941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1543541540, guid: ea345c9cdb3637640be2cd6fbe58be38, type: 3}
+  m_Sprite: {fileID: 194663346182484679, guid: b94be95b056859949a3fe4300e4b3f0e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1084,8 +1076,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 0, y: -300.00003}
+  m_AnchoredPosition: {x: 0, y: -250}
+  m_SizeDelta: {x: 0, y: -500.00003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128539934
 MonoBehaviour:
@@ -1165,7 +1157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   home: {fileID: 1103686543}
   replay: {fileID: 2035819086}
-  menu: {fileID: 0}
+  next: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

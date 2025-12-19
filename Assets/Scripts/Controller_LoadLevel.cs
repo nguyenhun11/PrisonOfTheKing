@@ -67,6 +67,19 @@ public class Controller_LoadLevel : MonoBehaviour
         
         SaveProgress(); 
     }
+    
+    public void ResetToLevel(string levelName)
+    {
+        LevelData currLevel = allLevels.Find(x => x.levelName == levelName);
+        currLevel.ResetLevel(false);
+        while (currLevel.nextLevels != null && currLevel.nextLevels.Count > 0)
+        {
+            currLevel = currLevel.nextLevels[0];
+            currLevel.ResetLevel();
+        }
+        
+        SaveProgress(); 
+    }
 
     // --- LOGIC LOAD (JSON -> SCRIPTABLE OBJECT) ---
     public void SyncDataToScriptableObjects()

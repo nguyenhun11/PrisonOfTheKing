@@ -34,10 +34,13 @@ public class Controller_Level : MonoBehaviour
     [Header("Game Logical")]
     public Key key;
     public Door door;
-    public NPC npc;
+    //public NPC npc;
     
     [Header("Dialogue Data")]
     public LevelData levelData;
+    
+    [Header("UI setting")]
+    public GameObject OnGamePanel;
 
     void Start()
     {
@@ -53,11 +56,11 @@ public class Controller_Level : MonoBehaviour
         ShowKey(false);
         
         Controller_Dialogue.Instance.EndDialogue();
+        Controller_Sound.PlayMusic("Level");
 
         Invoke(nameof(CheckEnemiesLeft), 1f);
-        //levelData = Controller_LoadLevel.Instance.currentLevel; //Không xóa dòng này, bỏ comment lúc build game
+        levelData = Controller_LoadLevel.Instance.currentLevel; //Không xóa dòng này, bỏ comment lúc build game
         
-        npc?.gameObject.SetActive(levelData.showNPC);
     }
 
     private void CheckEnemiesLeft()
@@ -83,8 +86,10 @@ public class Controller_Level : MonoBehaviour
     
     private IEnumerator PlayDialogueWithDelay(DialogueData data, float delayTime)
     {
+        _playerState.GetComponent<PlayerMovement>().canMove = false;
         yield return new WaitForSeconds(delayTime);
         Controller_Dialogue.Instance.StartDialogue(data);
+        _playerState.GetComponent<PlayerMovement>().canMove = true;
     }
 
     public void RePlay()
@@ -98,12 +103,16 @@ public class Controller_Level : MonoBehaviour
         Controller_Dialogue.Instance.EndDialogue();
         Controller_Pause.SetPause(true);
         Controller_UI.Instance.ShowSettingPanel(true);
+        OnGamePanel.SetActive(false);
+        player.GetComponent<PlayerMovement>().canMove = false;
     }
 
     public void Resume()
     {
         Controller_Pause.SetPause(false);
         Controller_UI.Instance.ShowSettingPanel(false);
+        OnGamePanel.SetActive(true);
+        player.GetComponent<PlayerMovement>().canMove = true;
     }
 
     public void ReturnToMenu()
@@ -114,6 +123,26 @@ public class Controller_Level : MonoBehaviour
         }
         Controller_Pause.SetPause(false);
         Controller_Scene.Instance.LoadScene("LevelSelect");
+    }
+
+    public void ReturnToStartScene()
+    {
+        if (Controller_LoadLevel.Instance != null)
+        {
+            Controller_LoadLevel.Instance.SaveProgress();
+        }
+        Controller_Pause.SetPause(false);
+        Controller_Scene.Instance.LoadScene("StartScene");
+    }
+
+    public void LoadSettingScene()
+    {
+        if (Controller_LoadLevel.Instance != null)
+        {
+            Controller_LoadLevel.Instance.SaveProgress();
+        }
+        Controller_Pause.SetPause(false);
+        Controller_Scene.Instance.LoadScene("Setting");
     }
 
     private void ShowKey(bool on)
@@ -145,6 +174,7 @@ public class Controller_Level : MonoBehaviour
         levelData.FinishLevel();
         levelData.showNPC = false;
         Controller_LoadLevel.Instance.CompleteCurrentLevel();
+        Controller_Sound.PlayMusic("Win", false);
         StartCoroutine(WaitGameWin());
     }
     
@@ -158,6 +188,7 @@ public class Controller_Level : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Game over");
+        Controller_Sound.PlayMusic("Lose", false);
         Controller_Scene.Instance.LoadScene("Lose");
     }
 }

@@ -75,14 +75,14 @@ public class Controller_Sound : MonoBehaviour
         _voiceAudioSource.PlayOneShot(clip);
     }
 
-    public static void PlayMusic(string soundName)
+    public static void PlayMusic(string soundName, bool loop = true)
     {
         AudioClip clip = _soundEffectLibrary.GetRandomClip(soundName);
         if (clip != null)
         {
             if (_backgroundAudioSource.clip == clip && _backgroundAudioSource.isPlaying) return;
             _backgroundAudioSource.clip = clip;
-            _backgroundAudioSource.loop = true;
+            _backgroundAudioSource.loop = loop;
             _backgroundAudioSource.Play();
         }
     }

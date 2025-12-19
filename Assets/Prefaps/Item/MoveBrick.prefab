@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1190817644521517241}
   - component: {fileID: 678792227619869821}
   - component: {fileID: 7360458812991132430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MoveBrick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,8 +107,11 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 64
-  DebugIsMoving: 0
+  tileLayer:
+    serializedVersion: 2
+    m_Bits: 256
   moveSpeed: 5
+  MoveDir: 0
   canMoveByOthers: 1
   sameSpeedWithOther: 1
   stopOther: 0
@@ -144,7 +147,7 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 3
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -156,7 +159,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9, y: 0.9}
+  m_Size: {x: 0.95, y: 0.95}
   m_EdgeRadius: 0
 --- !u!50 &678792227619869821
 Rigidbody2D:

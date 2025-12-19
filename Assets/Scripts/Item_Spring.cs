@@ -12,9 +12,9 @@ public class Item_Spring : MonoBehaviour
     
     // --- KHÓA LOGIC ---
     // Biến này để đánh dấu lò xo đang bận xử lý, không nhận thêm lệnh Trigger
-    private bool _isBouncing = false; 
+    [SerializeField] private bool _isBouncing = false; 
 
-    private TravelTile _pendingTravelTile;
+    [SerializeField] private TravelTile _pendingTravelTile;
 
     private void Start()
     {
@@ -30,13 +30,12 @@ public class Item_Spring : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (_isBouncing) return;
+        if (other.GetComponent<Enemy>() != null) return;
 
         if (other.TryGetComponent(out TravelTile travelTile))
         {
             if (travelTile.IsMoving)
             {
-                Debug.Log("Spring: Bắt đầu quy trình nảy");
-                
                 _isBouncing = true;
                 
                 travelTile.Move(_tile.currNode.GetNode(moveDir)); 
@@ -53,10 +52,17 @@ public class Item_Spring : MonoBehaviour
         _pendingTravelTile.OnTravelTileStop -= OnObjectArrivedAtCenter;
 
         if (_animator != null) _animator.SetTrigger(Trigger);
+        Controller_Sound.Play("Spring");
         
-        Debug.Log("Spring: Phóng vật đi!");
-        _pendingTravelTile.Move(moveDir); 
-        
+        if (_pendingTravelTile.TryGetComponent(out PlayerMovement player))
+        {
+            player.MoveCharacter(moveDir);
+        }
+        else
+        {
+            _pendingTravelTile.Move(moveDir);
+        }
+
         _pendingTravelTile = null;
 
         StartCoroutine(ResetSpringCooldown());

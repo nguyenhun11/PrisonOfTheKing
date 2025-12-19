@@ -12,6 +12,7 @@ public class NPC : MonoBehaviour
         _tile = GetComponent<Tile>();
 
         _tile.isStopTile = _levelData.showNPCDialogue;
+        gameObject.SetActive(_levelData.showNPC);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
