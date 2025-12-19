@@ -13,6 +13,7 @@ Trên hành trình chạy trốn, bạn sẽ dần khám phá ra sự thật v�
 Vuốt để di chuyển các hướng trái, phải, lên, xuống, mục tiêu đánh gục tất cả quái vật trên đường đi. Tận dụng các vật thể trên đường đi, tránh những cái bẫy để sống sót. Sau khi tiêu diệt toàn bộ quái vật, chìa khóa sẽ xuất hiện, nhảy đến lấy chìa khóa và đi đến cửa để kết thúc màn.
 
 ## Chơi game
-Tải xuống file cài đặt (apk) dành cho android tại [Google Drive](https://drive.google.com/drive/folders/1yBTcpZkYgusZC29g1rMEb-XEdG-h02RG?usp=sharing) hoặc trên [Itch.io](https://nguyenhun11.itch.io/prison-of-the-king) (để lại comment và đánh giá cho mình nhé).
+Tải xuống file cài đặt (apk) dành cho android tại [Itch.io](https://nguyenhun11.itch.io/prison-of-the-king) (để lại comment và đánh giá cho mình nhé).
+- Chơi thử game trực tiếp trên itch.io với trải nghiệm hạn chế về dữ liệu.
 - Mở file apk đã tải, chọn cài đặt, (cứ yên tâm là mình chưa đủ trình để làm cho file apk không an toàn đâu nên cứ quét và cài đặt bình thường nhé)
 - Ứng dụng sẽ xuất hiện trên màn hình điện thoại, mở lên, xoay màn hình ngang lại và tận hưởng hành trình trốn thoát nhé.
