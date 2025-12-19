@@ -80,7 +80,10 @@ public class Item_Bomb : MonoBehaviour
     private void Boom()
     {
         _animator.SetTrigger("Boom");
+<<<<<<< HEAD
         _collider2D.enabled = false;
+=======
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
         Controller_Sound.Play("Boom");
     }
 

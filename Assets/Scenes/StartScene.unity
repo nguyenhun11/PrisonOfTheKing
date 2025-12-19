@@ -1937,6 +1937,10 @@ GameObject:
   - component: {fileID: 2078545893}
   - component: {fileID: 2078545896}
   - component: {fileID: 2078545897}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 2078545898}
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
   - component: {fileID: 2078545899}
   m_Layer: 0
   m_Name: Main Camera
@@ -2070,7 +2074,11 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078545892}
+<<<<<<< HEAD
   m_Enabled: 0
+=======
+  m_Enabled: 1
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
   m_VideoClip: {fileID: 32900000, guid: a3bdcd5761155a743a269dd13ef21e8e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -2099,6 +2107,27 @@ VideoPlayer:
   m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+<<<<<<< HEAD
+--- !u!82 &2078545899
+AudioSource:
+=======
+--- !u!114 &2078545898
+MonoBehaviour:
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078545892}
+  m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c981fa8538b7654a840bb2cc1db1b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 0}
+  menuSceneName: MainMenu
 --- !u!82 &2078545899
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2107,6 +2136,7 @@ AudioSource:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078545892}
   m_Enabled: 1
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}

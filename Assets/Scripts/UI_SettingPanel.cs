@@ -138,7 +138,11 @@ public class UI_SettingsPanel : MonoBehaviour
             {
                 if (!allLevels[i].isLocked)
                 {
+<<<<<<< HEAD
                     options.Add(allLevels[i].levelName); 
+=======
+                    options.Add((i + 1).ToString()); 
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
                 }
             }
 

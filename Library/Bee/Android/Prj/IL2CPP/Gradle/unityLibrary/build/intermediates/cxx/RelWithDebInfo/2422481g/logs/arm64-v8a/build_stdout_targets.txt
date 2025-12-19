@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\3.CreateGame\PrisonOfTheKing\.utmp\RelWithDebInfo\2422481g\arm64-v8a'
+ninja: no work to do.

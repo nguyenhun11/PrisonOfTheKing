@@ -1,14 +1,20 @@
 using System.Collections;
+<<<<<<< HEAD
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+=======
+using UnityEngine;
+using UnityEngine.SceneManagement;
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
 using UnityEngine.Video;
 
 public class IntroScene : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
+<<<<<<< HEAD
     public Button languageButton;
     public TextMeshProUGUI startText;
     public Button settingButton;
@@ -20,11 +26,15 @@ public class IntroScene : MonoBehaviour
     public Button btnYes;
     public Button btnNo;
     public TextMeshProUGUI exitText;
+=======
+    public string menuSceneName = "LevelSelect"; // Tên scene menu của bạn
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
 
     void Start()
     {
         if (videoPlayer == null) 
             videoPlayer = GetComponent<VideoPlayer>();
+<<<<<<< HEAD
         Controller_Sound.PlayMusic("Background");
         CloseQuitConfirm();
         languageButton.onClick.AddListener(ChangeLanguage);
@@ -33,10 +43,14 @@ public class IntroScene : MonoBehaviour
         settingButton.onClick.AddListener(LoadSetting);
         btnYes.onClick.AddListener(Quit);
         btnNo.onClick.AddListener(CloseQuitConfirm);
+=======
+        Controller_Sound.StopMusic();
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
     }
 
     void Update()
     {
+<<<<<<< HEAD
         if (_blocked) return;
         
         if (Input.GetKeyDown(KeyCode.Space))
@@ -115,4 +129,23 @@ public class IntroScene : MonoBehaviour
         Application.Quit();
     }
     
+=======
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        {
+            LoadMenu();
+        }
+    }
+    
+
+    IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(2);
+        LoadMenu();
+    }
+
+    void LoadMenu()
+    {
+        Controller_Scene.Instance.LoadScene("LevelSelect");
+    }
+>>>>>>> f8e8b9a9d2c6bfb990909d2158650045c34747fb
 }
