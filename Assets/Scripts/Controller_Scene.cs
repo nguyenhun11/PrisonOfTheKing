@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,7 @@ public class Controller_Scene : MonoBehaviour
     [Header("Transition")]
     public Canvas transitionCanvas;
     public float transitionDuration = 1f;
+    public TextMeshProUGUI shownName;
     private Animator _transitionAnimator;
 
     private void Awake()
@@ -48,9 +50,10 @@ public class Controller_Scene : MonoBehaviour
     }
 
     // Hàm này gọi khi bạn muốn chuyển scene (VD: chạm vào cửa)
-    public void LoadScene(string sceneName)
+    public void LoadScene(string sceneName, string shownName = "")
     {
         StartCoroutine(Transition(sceneName));
+        this.shownName.text = shownName;
     }
 
     private IEnumerator Transition(string sceneName)

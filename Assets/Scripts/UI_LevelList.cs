@@ -76,7 +76,7 @@ public class UI_LevelList : MonoBehaviour
     
     public void LoadSettingScene()
     {
-        Controller_Scene.Instance.LoadScene("Setting");
+        Controller_Scene.Instance.LoadScene("Setting", "Settings");
     }
 
     public void LoadStartScene()

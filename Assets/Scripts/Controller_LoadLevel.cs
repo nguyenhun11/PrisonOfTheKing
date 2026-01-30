@@ -198,4 +198,29 @@ public class Controller_LoadLevel : MonoBehaviour
         
         SaveProgress();
     }
+
+    public void SkipAllFutureDialogues()
+    {
+        // Duyệt qua tất cả các level trong game
+        foreach (var level in allLevels)
+        {
+            // Gọi hàm xử lý data bên trong ScriptableObject LevelData
+            level.SkipAllDialogues();
+        }
+
+        // Quan trọng: Lưu lại state ngay lập tức để lần sau vào game vẫn nhớ
+        SaveProgress();
+
+        Debug.Log("Đã skip toàn bộ hội thoại của tất cả Level!");
+    }
+
+    // Hàm tiện ích để chỉ skip level hiện tại (gọi từ nút Skip This)
+    public void SkipCurrentLevelDialogues()
+    {
+        if (currentLevel != null)
+        {
+            currentLevel.SkipAllDialogues();
+            SaveProgress();
+        }
+    }
 }

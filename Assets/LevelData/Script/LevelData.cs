@@ -32,7 +32,7 @@ public class LevelData : ScriptableObject
     {
         if (isLocked) return;
         Controller_LoadLevel.Instance.currentLevel = this;
-        Controller_Scene.Instance.LoadScene(sceneName);
+        Controller_Scene.Instance.LoadScene(sceneName, levelName);
     }
     
     [System.Serializable]
@@ -80,5 +80,14 @@ public class LevelData : ScriptableObject
         {
             enemyCountTrigger.isOpened = true;
         }
+    }
+
+    public void SkipAllDialogues()
+    {
+        foreach (EnemyCountTrigger enemyCountTrigger in enemyDialogues)
+        {
+            enemyCountTrigger.isOpened = true;
+        }
+        showNPCDialogue = false;
     }
 }
